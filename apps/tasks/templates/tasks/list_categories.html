@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% load widget_tweaks %}
+
+{% block title %}
+    Listar Categorias - {{ block.super }}
+{% endblock title %}
+
+{% block body %}
+    <div class="container">
+        <h1>Lista de Categorias</h1>
+        {% include 'partials/messages.html' %}
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Categoria</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for category in categories %}
+                            <tr>
+                                <td scope="row">{{ category.id }}</td>
+                                <td scope="row">{{ category.name }}</td>
+                                <td scope="row">{{ category.description }}</td>
+                                <td>
+                                    <a href="{% url 'category:edit_category' category.id %}" class="btn btn-primary btn-sm">Editar</a>
+                                    <a href="{% url 'category:delete_category' category.id %}" class="btn btn-danger btn-sm confirm-delete" data-toggle="modal" data-target="#ConfirmDeleteModalCenter" id="deleteButton-{{ category.id }}">Excluir</a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        {%  include 'tasks/confirm_delete.html' %}
+    </div>
+{% endblock body %}

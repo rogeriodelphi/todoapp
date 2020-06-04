@@ -1,0 +1,65 @@
+@startuml
+
+skinparam roundcorner 10
+
+title Class Diagram - ToDo App
+
+class User #pink {
+    first_name: CharField
+    last_name: CharField
+    username: CharField
+    password: CharField
+    email: EmailField
+}
+
+note right of User
+    A classe User é do pacote django.contrib.auth
+end note
+
+
+class UserProfile {
+    photo: ImageField
+    cel_phone: CharField
+
+    __str__()
+}
+
+class Category {
+    name: CharField
+    description: TextField
+    owner: User
+
+    __strt__()
+}
+
+
+class Task {
+    name: CharField
+    description: TextField
+    end_date: DateField
+    priority: CharField
+    category: Category
+    status: CharField
+    owner: User
+
+    __str__()
+}
+
+note right of Task::priority
+    PRIORITY_CHOICES = (
+        ('B', 'Baixa'),
+        ('M', 'Média'),
+        ('A', 'Alta'),
+    )
+end note
+
+note right of Task::status
+    STATUS_CHOICES = (
+        ('EX', 'Em execução'),
+        ('PD', 'Pendente'),
+        ('CD', 'Concluída'),
+    )
+end note
+
+Task "ForeignKey" -- User
+Task "ManyToMany" -- Category
