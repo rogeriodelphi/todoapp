@@ -1,10 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-</body>
-</html>
+{% load widget_tweaks %}
+
+{% block title %}
+    Lista de Tarefas - {{ block.super }}
+{% endblock title %}
+
+{% block body %}
+    <div class="container">
+        <h1>Tarefas</h1>
+        {% include 'partials/messages.html' %}
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Tarefa</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Data Final</th>
+                            <th scope="col">Prioridade</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for task in tasks %}
+                            <tr>
+                                <td scope="row">{{ task.id }}</td>
+                                <td scope="row">{{ task.name }}</td>
+                                <td scope="row">{{ task.description }}</td>
+                                <td scope="row">{{ task.end_date }}</td>
+                                <td scope="row">{{ task.priority }}</td>
+                                <td scope="row">{{ task.get_status_display }}</td>
+                                <td>
+                                    <a href="{% url 'tasks:edit_task' task.id %}" class="btn btn-primary btn-sm">Editar</a>
+                                    <a href="#" class="btn btn-danger btn-sm confirm-delete" data-toggle="modal" data-target="#ConfirmDeleteModalCenter" id="deleteButton-{{ category.id }}">Excluir</a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        {%  include 'tasks/confirm_delete.html' %}
+    </div>
+{% endblock body %}
