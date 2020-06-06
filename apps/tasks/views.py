@@ -14,6 +14,7 @@ def add_category(request):
             f.owner = request.user
             f.save()
             messages.success(request, 'Categoria salva com sucesso.')
+    #Se o método for get, renderiza o formulário em branco
     form = CategoryForm()
     context['form'] = form
     return render(request, template_name, context)
@@ -56,3 +57,31 @@ def delete_category(request, id_category):
         messages.error(request, 'Você não tem permissão para excluir essa categoria.')
         return redirect('core:home')
     return redirect('category:list_categories')
+
+
+def add_task(request):
+    template_name = 'tasks/add_task.html'
+    context = {}
+    if request.method == 'POST':
+        form = TaskForm(request.POST)
+        if form.is_valid():
+            f = form.save(commit=False)
+            f.owner = request.user
+            f.save()
+            #salvar many to many
+            form.save_m2m()
+            messages.success(request, 'Tarefa salva com sucesso.')
+        else:
+            print(form.errors)
+    #Se o método for get, renderiza o formulário em branco
+    form = TaskForm()
+    context['form'] = form
+    return render(request, template_name, context)
+
+def list_tasks(request):
+    template_name = 'tasks/list_tasks.html'
+    tasks = Task.objects.filter(owner=request.user)
+    context = {
+        'tasks': tasks
+    }
+    return render(request, template_name, context)

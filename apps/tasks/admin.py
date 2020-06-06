@@ -8,7 +8,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
 
 class TaskAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'end_date', 'priority', 'status')
+    list_display = ('id', 'name', 'end_date', 'priority', 'status', 'owner')
 
 
 
