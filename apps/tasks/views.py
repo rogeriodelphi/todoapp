@@ -43,7 +43,7 @@ def edit_category(request, id_category):
         if form.is_valid():
             form.save()
             messages.info(request, 'Os dados foram atualiados com sucesso.')
-            return redirect('category:list_categories')
+            return redirect('tasks:list_categories')
     form = CategoryForm(instance=category)
     context['form'] = form
     return render(request, template_name, context)
@@ -54,9 +54,9 @@ def delete_category(request, id_category):
     if category.owner == request.user:
         category.delete()
     else:
-        messages.error(request, 'Você não tem permissão para excluir essa categoria.')
+        messages.error(request, 'Você não tem permissão para excluir esta categoria.')
         return redirect('core:home')
-    return redirect('category:list_categories')
+    return redirect('tasks:list_categories')
 
 
 def add_task(request):
@@ -105,3 +105,14 @@ def edit_task(request, id_task):
     form = TaskForm(instance=task)
     context['form'] = form
     return render(request, template_name, context)
+
+def task_delete(request, id_task):
+    task = Task.objects.get(id=id_task)
+    #se o dono setado nessa tarefa recuperada é o mesmo que tem logado na função
+    if task.owner == request.user:
+        #Pode deletar, pois ele é o dono da tarefa
+        task.delete()
+    else:
+        messages.error(request, 'Você não tem permissão para excluir esta tarefa.')
+        return redirect('core:home')
+    return redirect('tasks:list_tasks')
