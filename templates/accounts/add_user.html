@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% load widget_tweaks %}
+
+{% block title %}
+    Novo usuário - {{ block.super }}
+{% endblock title %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-12"></div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <table class="table" id="dataTable" width="100%" cellspacing="0">
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="container">
+                        <div class="card-header ">
+                            <h2><i class="fa fa-pencil"></i> Novo usuário</h2>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="{{ form.first_name.id_for_label }}"><strong>Primeiro nome</strong></label>
+                                    {{ form.first_name|add_class:"form-control"|attr:"autofocus" }}
+                                </div>
+                                <div class="form-group">
+                                    <label for="{{ form.last_name.id_for_label }}"><strong>Sobrenome</strong></label>
+                                    {{ form.last_name|add_class:"form-control" }}
+                                </div>
+                                <div class="form-group">
+                                    <label for="{{ form.username.id_for_label }}"><strong>Nome de usuário</strong></label>
+                                    {{ form.username|add_class:"form-control" }}
+                                </div>
+                                <div class="form-group">
+                                    <label for="{{ form.email.id_for_label }}"><strong>E-mail</strong></label>
+                                    {{ form.email|add_class:"form-control" }}
+                                </div>
+                                <div class="form-group">
+                                    <label for="{{ form.password.id_for_label }}"><strong>Senha</strong></label>
+                                    {{ form.password|add_class:"form-control"|attr:"type:password" }}
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="card-footer">
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-primary">Salvar</button>
+                                    <a href="{{request.META.HTTP_REFERER}}" class="btn btn-info">Voltar</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </table>
+        </div>
+    </div><br>
+
+{% endblock body %}
