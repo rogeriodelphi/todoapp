@@ -30,12 +30,15 @@
                                 <td scope="row">{{ task.id }}</td>
                                 <td scope="row">{{ task.name }}</td>
                                 <td scope="row">{{ task.description }}</td>
-                                <td scope="row">{{ task.end_date }}</td>
-                                <td scope="row">{{ task.priority }}</td>
+                                <td scope="row">{{ task.end_date|date:'d/m/Y' }}</td>
+                                <td scope="row">{{ task.get_priority_display }}</td>
                                 <td scope="row">{{ task.get_status_display }}</td>
-                                <td>
-                                    <a href="{% url 'tasks:edit_task' task.id %}" class="btn btn-primary btn-sm">Editar</a>
-                                    <a href="{% url 'tasks:task_delete' task.id %}" class="btn btn-danger btn-sm confirm-delete" data-toggle="modal", data-target="#confirmDeleteModal" id="deleteButton-{{ category.id }}">Excluir</a>
+                                <td><a href="{% url 'tasks:edit_task' task.id %}">
+                                        <i class="fa fa-pencil-square fa-lg" aria-hidden="true" style="color: #6B8E23;"></i>
+                                    </a>
+                                    <a href="{% url 'tasks:task_delete' task.id %}">
+                                        <i class="fa fa-trash fa-lg" aria-hidden="true" style="color: red;"></i>
+                                    </a>
                                 </td>
                             </tr>
                         {% endfor %}

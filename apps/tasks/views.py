@@ -106,7 +106,7 @@ def edit_task(request, id_task):
         #verifica se está com os dados validados
         if form.is_valid():
             form.save()
-            messages.info(request, 'Os dados foram atualiados com sucesso.')
+            messages.info(request, 'Os dados foram atualizados com sucesso.')
             return redirect('tasks:list_tasks')
     form = TaskForm(instance=task)
     context['form'] = form

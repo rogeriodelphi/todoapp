@@ -5,10 +5,8 @@ from django.contrib.auth import authenticate, login, logout, update_session_auth
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import PasswordChangeForm
 
-
 from .forms import UserForm, UserProfileForm, UserFormChangeInformation
 from .models import UserProfile
-
 
 
 def add_user(request):
@@ -63,6 +61,10 @@ def user_change_password(request):
     context['form'] = form
     return render(request, template_name, context)
 
+
+
+
+
 @login_required(login_url='/contas/login/')
 def add_user_profile(request):
     template_name = 'accounts/add_user_profile.html'
@@ -86,7 +88,6 @@ def list_user_profile(request):
         profile = UserProfile.objects.get(user=request.user)
     except UserProfile.DoesNotExist:
         profile = None
-
     context = {
         'profile': profile
     }

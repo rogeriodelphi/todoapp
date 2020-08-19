@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% load widget_tweaks %}
+
+{% block title %}
+    {{ block.super }}
+{% endblock title %}
+
+{% block body %}
+    <div class="container">
+        <div style="margin: 10px 0">
+            <div class="col-sm-12">
+                <form class="form-inline my-2 my-md-0" action="{% url 'core:search_busca_datas' %}" method="GET" class="form-inline">
+                    <input id="id_busca_datainicial" name="busca_datainicial" class="form-control" type="text" placeholder="Data Inicial" style="margin-right: 10px"/>
+                    <input id="id_busca_datafinal" name="busca_datafinal" class="form-control" type="text" placeholder="Data Final" />
+                    <button type="submit" class="btn btn-primary ml-1">Buscar</button>
+                    <a href="." class="ml-2">Limpar</a>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Pesquisa de Tarefas por período de datas</h1>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Tarefa</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Data Final</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for task in tasks %}
+                            <tr>
+                                <th>{{ task.id }}</th>
+                                <th>{{ task.name }}</th>
+                                <td>{{ task.description }}</td>
+                                <td>{{ task.end_date|date:'d/m/Y' }}</td>
+                                <td><a href="{% url 'tasks:edit_task' task.id %}" class="btn btn-primary btn-sm">Editar</a></td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock body %}

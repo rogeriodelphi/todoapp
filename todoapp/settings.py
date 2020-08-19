@@ -173,3 +173,5 @@ MESSAGE_TAGS = {
     messages.INFO: 'alert-info',
 
 }
+
+#DATE_INPUT_FORMATS = ["%d/%m/%Y"]

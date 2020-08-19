@@ -46,3 +46,7 @@ class Task(models.Model):
 
     def __str__(self):
         return self.name
+
+    def list_categories(self):
+        return ", ".join([c.name for c in self.category.all()])
+    list_categories.short_description = "Categorias"
