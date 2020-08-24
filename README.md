@@ -1,10 +1,12 @@
 [![Python Version](https://img.shields.io/badge/python-3.7.5-brightgreen.svg)](https://python.org)
 [![Django Version](https://img.shields.io/badge/django-2.2.10-brightgreen.svg)](https://djangoproject.com)
+[![Updates](https://pyup.io/repos/github/rogeriodelphi/todoapp/shield.svg)](https://pyup.io/repos/github/rogeriodelphi/todoapp/)
+[![Python 3](https://pyup.io/repos/github/rogeriodelphi/todoapp/python-3-shield.svg)](https://pyup.io/repos/github/rogeriodelphi/todoapp/)
 
 # ToDoAPP
 ```bash
 *Sistema de Gestão de Tarefas*  
-Projeto proprietário desenvolvido em _Python_ 3 no _Windows_, testado no GNU/_Linux_ e _Windows_.  
+Projeto desenvolvido em _Python_ no _Windows_, testado no GNU/_Linux_ e _Windows_.  
 ```
 Implementações
 * Cadastro de categorias e tarefas, ...
