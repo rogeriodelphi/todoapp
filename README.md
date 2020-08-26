@@ -2,6 +2,7 @@
 [![Django Version](https://img.shields.io/badge/django-2.2.13-brightgreen.svg)](https://djangoproject.com)
 [![Updates](https://pyup.io/repos/github/rogeriodelphi/todoapp/shield.svg)](https://pyup.io/repos/github/rogeriodelphi/todoapp/)
 [![Python 3](https://pyup.io/repos/github/rogeriodelphi/todoapp/python-3-shield.svg)](https://pyup.io/repos/github/rogeriodelphi/todoapp/)
+[![codecov](https://codecov.io/gh/rogeriodelphi/todoapp/branch/master/graph/badge.svg)](https://codecov.io/gh/rogeriodelphi/todoapp)
 
 # ToDoAPP
 ```bash
