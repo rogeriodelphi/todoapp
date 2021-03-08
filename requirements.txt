@@ -9,7 +9,7 @@ greenlet==0.4.15
 idna==2.9
 Pillow==7.1.2
 psycopg2-binary==2.8.5
-Pygments==2.6.1
+Pygments==2.8.1
 python-decouple==3.3
 pytz==2020.1
 requests==2.23.0
