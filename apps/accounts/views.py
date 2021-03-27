@@ -1,9 +1,9 @@
-from django.shortcuts import render, redirect
-from django.contrib.auth.models import User
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout, update_session_auth_hash
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import PasswordChangeForm
+from django.contrib.auth.models import User
+from django.shortcuts import render, redirect
 
 from .forms import UserForm, UserProfileForm, UserFormChangeInformation
 from .models import UserProfile
@@ -15,12 +15,12 @@ def add_user(request):
     if request.method == 'POST':
         form = UserForm(request.POST)
         if form.is_valid():
-            #Para que possa passar a senha e fazer um hash dela
+            # Para que possa passar a senha e fazer um hash dela
             f = form.save(commit=False)
             f.set_password(f.password)
             f.save()
             messages.success(request, "Usuário salvo com sucesso!")
-    #se a requisição for do tipo GET, instancia o formulário 'form'
+    # se a requisição for do tipo GET, instancia o formulário 'form'
     form = UserForm()
     context['form'] = form
     return render(request, template_name, context)
@@ -45,6 +45,7 @@ def user_logout(request):
     logout(request)
     return redirect('accounts:user_login')
 
+
 @login_required(login_url='/contas/login/')
 def user_change_password(request):
     template_name = 'accounts/user_change_password.html'
@@ -54,15 +55,12 @@ def user_change_password(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Senha alterada com sucesso!')
-            update_session_auth_hash(request,form.user)
+            update_session_auth_hash(request, form.user)
         else:
-             messages.error(request, 'Não foi possível trocar a suanha senha!')
+            messages.error(request, 'Não foi possível trocar a suanha senha!')
     form = PasswordChangeForm(user=request.user)
     context['form'] = form
     return render(request, template_name, context)
-
-
-
 
 
 @login_required(login_url='/contas/login/')
