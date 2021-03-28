@@ -1,5 +1,4 @@
 from django.forms.widgets import DateInput
-
 from apps.tasks.models import Task, Category
 from django import forms
 
@@ -10,7 +9,7 @@ class CategoryForm(forms.ModelForm):
     class Meta:
         model = Category
         exclude = ('user',)
-    
+
 class TaskForm(forms.ModelForm):
 #    end_time = forms.DateField(widget=DateInput(format='%d/%m/%Y'), input_formats=['%d/%m/%Y'])
 #    end_time = forms.DateField(label='Data Final',
@@ -18,5 +17,4 @@ class TaskForm(forms.ModelForm):
 #        input_formats = ['%d/%m/%Y', ],)
     class Meta:
         model = Task
-        exclude = ('user',)
-
+        exclude = ['user']

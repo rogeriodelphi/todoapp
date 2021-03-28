@@ -9,6 +9,8 @@ urlpatterns = [
     path('tarefas/', include('apps.tasks.urls', namespace='tasks')),
     path('contas/', include('apps.accounts.urls', namespace='accounts')),
     path('', include('core.urls', namespace='core')),
+    # path('calendar/', include('calendarapp.urls', namespace='calendarapp')),
+    path('', include('apps.tasks.urls', namespace='task_calendar')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 #urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT),

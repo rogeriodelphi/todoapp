@@ -33,7 +33,7 @@ def home(request):
 def search_tasks(request):
     template_name = 'core/search_tasks.html'
     query = request.GET.get('query')
-    tasks = Task.objects.filter(name__icontains=query, user=request.user).exclude(status='CD')
+    tasks = Task.objects.filter(title__icontains=query, user=request.user).exclude(status='CD')
     context = {
         'tasks': tasks
     }

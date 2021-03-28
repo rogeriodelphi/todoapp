@@ -1,9 +1,37 @@
-from django.contrib.auth.decorators import login_required
-from django.shortcuts import render, get_object_or_404, redirect
+from datetime import datetime, date
+from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib import messages
+
+from django.views import generic
+from django.utils.safestring import mark_safe
+from datetime import timedelta
+import calendar
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 from .forms import CategoryForm, TaskForm
 from .models import Category, Task
+from .utils import Calendar
+
+
+def get_date(req_day):
+    if req_day:
+        year, month = (int(x) for x in req_day.split('-'))
+        return date(year, month, day=1)
+    return datetime.today()
+
+def prev_month(d):
+    first = d.replace(day=1)
+    prev_month = first - timedelta(days=1)
+    month = 'month=' + str(prev_month.year) + '-' + str(prev_month.month)
+    return month
+
+def next_month(d):
+    days_in_month = calendar.monthrange(d.year, d.month)[1]
+    last = d.replace(day=days_in_month)
+    next_month = last + timedelta(days=1)
+    month = 'month=' + str(next_month.year) + '-' + str(next_month.month)
+    return month
 
 @login_required(login_url='/contas/login/')
 def add_category(request):
@@ -79,8 +107,11 @@ def add_task(request):
             print(form.errors)
     #Se o método for get, renderiza o formulário em branco
     form = TaskForm()
+    print(context)
     context['form'] = form
     return render(request, template_name, context)
+
+
 
 @login_required(login_url='/contas/login/')
 def list_tasks(request):
@@ -123,3 +154,30 @@ def task_delete(request, id_task):
         messages.error(request, 'Você não tem permissão para excluir esta tarefa.')
         return redirect('core:home')
     return redirect('tasks:list_tasks')
+
+
+class CalendarView(LoginRequiredMixin, generic.ListView):
+    login_url = '/contas/login/'
+    model = Task
+    template_name = 'tasks/calendar.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        d = get_date(self.request.GET.get('month', None))
+        cal = Calendar(d.year, d.month)
+        html_cal = cal.formatmonth(withyear=True)
+        context['calendar'] = mark_safe(html_cal)
+        context['prev_month'] = prev_month(d)
+        context['next_month'] = next_month(d)
+        return context
+
+
+@login_required(login_url='signup')
+def event_details(request, event_id):
+    task = Task.objects.get(id=event_id)
+    # eventmember = EventMember.objects.filter(event=event)
+    context = {
+        'task': task,
+        # 'eventmember': eventmember
+    }
+    return render(request, 'tasks/event-details.html', context)

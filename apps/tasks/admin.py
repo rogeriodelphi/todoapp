@@ -23,7 +23,7 @@ mark_all_tasks_running.short_description = "Marcar como 'Em execução' todas as
 
 @admin.register(Task)
 class TaskAdmin(admin.ModelAdmin):
-    list_display = ('id', 'title', 'user', 'end_time', 'priority', 'list_categories', 'status')
+    list_display = ('id', 'title', 'user', 'start_time','end_time', 'priority', 'list_categories', 'status', 'created_date')
     search_fields = ['title', 'description']
     list_filter = ['priority', 'user', 'category', 'status']
     actions = [mark_all_tasks_done, mark_all_tasks_pending, mark_all_tasks_running]

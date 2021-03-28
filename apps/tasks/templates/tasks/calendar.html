@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div class="clearfix">
+
+{#            <a class="btn btn-info right" href="{% url 'logout' %}"> Sair </a>#}
+        <a class="btn btn-info right mr-2" href="{% url 'task_calendar:calendar' %}?{{ next_month }} "> Próximo Mês >> </a>
+        <a class="btn btn-info right mr-2" href="{% url 'task_calendar:calendar' %}?{{ prev_month }}"> << Mês Anterior </a>
+{#        <a class="btn btn-info right mr-2" href="{% url 'task_calendar:calendar' %}?{{ weekday }}"> Semana </a>#}
+        <a class="btn btn-info right mr-2" href="{% url 'task_calendar:add_task' %}"> + Novo Evento </a>
+    </div>
+    <div style="color: blue;">
+        {{ calendar }}
+    </div>
+{% endblock %}
