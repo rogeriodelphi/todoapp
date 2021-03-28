@@ -44,11 +44,11 @@ class Task(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        return reverse('tasks:event-detail', args=(self.id,))
+        return reverse('tasks:task-detail', args=(self.id,))
 
     @property
     def get_html_url(self):
-        url = reverse('tasks:event-detail', args=(self.id,))
+        url = reverse('tasks:task-detail', args=(self.id,))
         return f'<a href="{url}"> {self.title} </a>'
 
     class Meta:

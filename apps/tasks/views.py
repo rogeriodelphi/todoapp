@@ -172,12 +172,12 @@ class CalendarView(LoginRequiredMixin, generic.ListView):
         return context
 
 
-@login_required(login_url='signup')
-def event_details(request, event_id):
-    task = Task.objects.get(id=event_id)
+@login_required(login_url='/contas/login/')
+def task_details(request, task_id):
+    task = Task.objects.get(id=task_id)
     # eventmember = EventMember.objects.filter(event=event)
     context = {
         'task': task,
         # 'eventmember': eventmember
     }
-    return render(request, 'tasks/event-details.html', context)
+    return render(request, 'tasks/task-details.html', context)
