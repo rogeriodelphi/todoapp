@@ -2,9 +2,9 @@ from django.db import models
 from django.contrib.auth.models import User
 
 class Category(models.Model):
-    name = models.CharField('Nome', max_length=150)
+    title = models.CharField('Nome', max_length=150)
     description = models.TextField('Descrição', blank=True, null=True)
-    owner = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     class Meta:
         db_table = 'Category'
@@ -14,7 +14,7 @@ class Category(models.Model):
 
 
     def __str__(self):
-        return self.name
+        return self.title
 
 
 class Task(models.Model):
@@ -29,14 +29,15 @@ class Task(models.Model):
         ('PD', 'Pendente'),
         ('CD', 'Concluída'),
     )
-
-    name = models.CharField('Tarefa', max_length=200)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    title = models.CharField('Título da Tarefa', max_length=200)
     description = models.TextField('Descrição')
-    end_date = models.DateField('Data Final', auto_now=False, auto_now_add=False)
+    start_time = models.DateTimeField('Data Inicial')
+    end_time = models.DateTimeField('Data Final')
     priority = models.CharField('Prioridade', max_length=1, choices=PRIORITY_CHOICES )
     category = models.ManyToManyField(Category)
     status = models.CharField('Status', max_length=2, choices=STATUS_CHOICES)
-    owner = models.ForeignKey(User, on_delete=models.CASCADE)
+
 
     class Meta:
         db_table  = 'Task'
@@ -45,8 +46,8 @@ class Task(models.Model):
         ordering = ['id']
 
     def __str__(self):
-        return self.name
+        return self.title
 
     def list_categories(self):
-        return ", ".join([c.name for c in self.category.all()])
+        return ", ".join([c.title for c in self.category.all()])
     list_categories.short_description = "Categorias"

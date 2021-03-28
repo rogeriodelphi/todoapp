@@ -13,7 +13,7 @@ def add_category(request):
         form = CategoryForm(request.POST)
         if form.is_valid():
             f = form.save(commit=False)
-            f.owner = request.user
+            f.user = request.user
             f.save()
             messages.success(request, 'Categoria salva com sucesso.')
     #Se o método for get, renderiza o formulário em branco
@@ -25,7 +25,7 @@ def add_category(request):
 @login_required(login_url='/contas/login/')
 def list_categories(request):
     template_name = 'tasks/list_categories.html'
-    categories = Category.objects.filter(owner=request.user)
+    categories = Category.objects.filter(user=request.user)
     context = {
         'categories': categories
     }
@@ -37,7 +37,7 @@ def edit_category(request, id_category):
     context = {}
 
     #Filtar por id e usuário
-    category = get_object_or_404(Category, id=id_category, owner=request.user)
+    category = get_object_or_404(Category, id=id_category, user=request.user)
     #Verificada se o método é 'post' ou 'get'
     if request.method == 'POST':
         #Pega os dados que estão vindo no formulário
@@ -54,7 +54,7 @@ def edit_category(request, id_category):
 @login_required(login_url='/contas/login/')
 def delete_category(request, id_category):
     category = Category.objects.get(id=id_category)
-    if category.owner == request.user:
+    if category.user == request.user:
         category.delete()
     else:
         messages.error(request, 'Você não tem permissão para excluir esta categoria.')
@@ -70,7 +70,7 @@ def add_task(request):
         form = TaskForm(request.POST)
         if form.is_valid():
             f = form.save(commit=False)
-            f.owner = request.user
+            f.user = request.user
             f.save()
             #salvar many to many
             form.save_m2m()
@@ -85,7 +85,7 @@ def add_task(request):
 @login_required(login_url='/contas/login/')
 def list_tasks(request):
     template_name = 'tasks/list_tasks.html'
-    tasks = Task.objects.filter(owner=request.user).exclude(status='CD')
+    tasks = Task.objects.filter(user=request.user).exclude(status='CD')
     context = {
         'tasks': tasks
     }
@@ -98,7 +98,7 @@ def edit_task(request, id_task):
     context = {}
 
     #Filtar por id e usuário
-    task = get_object_or_404(Task, id=id_task, owner=request.user)
+    task = get_object_or_404(Task, id=id_task, user=request.user)
     #Verificada se o método é 'post' ou 'get'
     if request.method == 'POST':
         #Pega os dados que estão vindo no formulário
@@ -116,7 +116,7 @@ def edit_task(request, id_task):
 def task_delete(request, id_task):
     task = Task.objects.get(id=id_task)
     #se o dono setado nessa tarefa recuperada é o mesmo que tem logado na função
-    if task.owner == request.user:
+    if task.user == request.user:
         #Pode deletar, pois ele é o dono da tarefa
         task.delete()
     else:

@@ -35,9 +35,9 @@
                         {% for task in tasks %}
                             <tr>
                                 <th>{{ task.id }}</th>
-                                <th>{{ task.name }}</th>
+                                <th>{{ task.title }}</th>
                                 <td>{{ task.description }}</td>
-                                <td>{{ task.end_date|date:'d/m/Y' }}</td>
+                                <td>{{ task.end_time|date:'d/m/Y' }}</td>
                                 <td><a href="{% url 'tasks:edit_task' task.id %}" class="btn btn-primary btn-sm">Editar</a></td>
                             </tr>
                         {% endfor %}

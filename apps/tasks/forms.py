@@ -9,14 +9,14 @@ class CategoryForm(forms.ModelForm):
 
     class Meta:
         model = Category
-        exclude = ('owner',)
+        exclude = ('user',)
     
 class TaskForm(forms.ModelForm):
-#    end_date = forms.DateField(widget=DateInput(format='%d/%m/%Y'), input_formats=['%d/%m/%Y'])
-#    end_date = forms.DateField(label='Data Final',
+#    end_time = forms.DateField(widget=DateInput(format='%d/%m/%Y'), input_formats=['%d/%m/%Y'])
+#    end_time = forms.DateField(label='Data Final',
 #    widget = DateInput(format='%d/%m/%Y', attrs={'maxlength': '10'}),
 #        input_formats = ['%d/%m/%Y', ],)
     class Meta:
         model = Task
-        exclude = ('owner',)
+        exclude = ('user',)
 

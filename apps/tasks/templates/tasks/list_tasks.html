@@ -18,6 +18,7 @@
                             <th scope="col">#</th>
                             <th scope="col">Tarefa</th>
                             <th scope="col">Descrição</th>
+                            <th scope="col">Data Inicial</th>
                             <th scope="col">Data Final</th>
                             <th scope="col">Prioridade</th>
                             <th scope="col">Status</th>
@@ -28,9 +29,10 @@
                         {% for task in tasks %}
                             <tr>
                                 <td scope="row">{{ task.id }}</td>
-                                <td scope="row">{{ task.name }}</td>
+                                <td scope="row">{{ task.title }}</td>
                                 <td scope="row">{{ task.description }}</td>
-                                <td scope="row">{{ task.end_date|date:'d/m/Y' }}</td>
+                                <td scope="row">{{ task.start_time|date:'d/m/Y' }}</td>
+                                <td scope="row">{{ task.end_time|date:'d/m/Y' }}</td>
                                 <td scope="row">{{ task.get_priority_display }}</td>
                                 <td scope="row">{{ task.get_status_display }}</td>
                                 <td><a href="{% url 'tasks:edit_task' task.id %}">

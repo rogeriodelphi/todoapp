@@ -4,9 +4,9 @@ from apps.tasks.models import Category, Task
 
 
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'description', 'owner')
-    search_fields = ['name', 'description']
-    list_filter = ['owner']
+    list_display = ('id', 'title', 'description', 'user')
+    search_fields = ['title', 'description']
+    list_filter = ['user']
 
 def mark_all_tasks_done(modeladmin, request, queryset):
     queryset.update(status='CD')
@@ -23,9 +23,9 @@ mark_all_tasks_running.short_description = "Marcar como 'Em execução' todas as
 
 @admin.register(Task)
 class TaskAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'owner', 'end_date', 'priority', 'list_categories', 'status')
-    search_fields = ['name', 'description']
-    list_filter = ['priority', 'owner', 'category', 'status']
+    list_display = ('id', 'title', 'user', 'end_time', 'priority', 'list_categories', 'status')
+    search_fields = ['title', 'description']
+    list_filter = ['priority', 'user', 'category', 'status']
     actions = [mark_all_tasks_done, mark_all_tasks_pending, mark_all_tasks_running]
 
 #    def list_categories(self, obj):

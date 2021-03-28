@@ -7,7 +7,7 @@ from datetime import datetime
 import datetime
 
 start_date= datetime.date(2020, 6, 23)
-end_date = datetime.date(2020, 6, 24)
+end_time = datetime.date(2020, 6, 24)
 
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
@@ -20,9 +20,9 @@ from apps.tasks .models import Task
 def home(request):
     template_name = 'core/home.html'
     #traz todos do dia atual e que não esteja concluída
-    tasks = Task.objects.filter(end_date__range=(start_date, end_date), owner=request.user).exclude(status='CD')
-#    tasks = Task.objects.filter(end_date=datetime.today()).exclude(status='CD')
-#    tasks = Task.objects.filter(end_date__month=now)
+    tasks = Task.objects.filter(end_time__range=(start_date, end_time), user=request.user).exclude(status='CD')
+#    tasks = Task.objects.filter(end_time=datetime.today()).exclude(status='CD')
+#    tasks = Task.objects.filter(end_time__month=now)
     context = {
         'tasks': tasks
     }
@@ -33,7 +33,7 @@ def home(request):
 def search_tasks(request):
     template_name = 'core/search_tasks.html'
     query = request.GET.get('query')
-    tasks = Task.objects.filter(name__icontains=query, owner=request.user).exclude(status='CD')
+    tasks = Task.objects.filter(name__icontains=query, user=request.user).exclude(status='CD')
     context = {
         'tasks': tasks
     }
@@ -46,8 +46,8 @@ def search_busca_datas(request):
     datainicial=request.GET.get('busca_datainicial')
     datafinal=request.GET.get('busca_datafinal')
     datetime.datetime.strptime("21/12/2008", "%d/%m/%Y").strftime("%Y-%m-%d")
-#    tasks = Task.objects.filter(end_date=search_busca_datainicial)
-    tasks = Task.objects.filter(end_date__range=(datainicial, datafinal), owner=request.user)
+#    tasks = Task.objects.filter(end_time=search_busca_datainicial)
+    tasks = Task.objects.filter(end_time__range=(datainicial, datafinal), user=request.user)
     context = {
         'tasks': tasks
     }

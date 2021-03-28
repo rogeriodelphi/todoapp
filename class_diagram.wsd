@@ -36,7 +36,7 @@ class Category {
 class Task {
     name: CharField
     description: TextField
-    end_date: DateField
+    end_time: DateField
     priority: CharField
     category: Category
     status: CharField
