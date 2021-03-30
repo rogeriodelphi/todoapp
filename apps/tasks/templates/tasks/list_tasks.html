@@ -7,15 +7,21 @@
 {% endblock title %}
 
 {% block body %}
-    <div class="container">
-        <h1>Tarefas</h1>
-        {% include 'partials/messages.html' %}
-        <div class="row">
-            <div class="col-md-12">
-                <table class="table table-hover">
+<div class="container">
+    <div class="row">
+        <div class="col-12"></div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            <h2 class="pull-left"><i class="fa fa-table"></i> Listagem de Tarefas</h2>
+            {% include 'partials/messages.html' %}
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-striped" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th scope="col">#</th>
+                            <th scope="col">ID</th>
                             <th scope="col">Tarefa</th>
                             <th scope="col">Descrição</th>
                             <th scope="col">Data Inicial</th>
@@ -34,12 +40,22 @@
                                 <td scope="row">{{ task.start_time|date:'d/m/Y' }}</td>
                                 <td scope="row">{{ task.end_time|date:'d/m/Y' }}</td>
                                 <td scope="row">{{ task.get_priority_display }}</td>
-                                <td scope="row">{{ task.get_status_display }}</td>
-                                <td><a href="{% url 'tasks:edit_task' task.id %}">
-                                        <i class="fa fa-pencil-square fa-lg" aria-hidden="true" style="color: #6B8E23;"></i>
+                                {% if task.status == 'FA' %}
+                                    <td><span class="badge badge-warning">{{ task.get_status_display }}</span></td>
+                                {% elif task.status == 'AF' %}
+                                    <td><span class="badge badge-danger">{{ task.get_status_display }}</span></td>
+                                {% else %}
+                                    <td><span class="badge badge-success">{{ task.get_status_display }}</span></td>
+                                {% endif %}
+                                <td>
+                                    <a href="{% url 'tasks:task-detail' task.id %}">
+                                        <i class="fa fa-search" aria-hidden="true" style="color: green;"></i>
+                                    </a>
+                                    <a href="{% url 'tasks:edit_task' task.id %}">
+                                        <i class="fa fa-pencil-square" aria-hidden="true" style="color: #6B8E23;"></i>
                                     </a>
                                     <a href="{% url 'tasks:task_delete' task.id %}">
-                                        <i class="fa fa-trash fa-lg" aria-hidden="true" style="color: red;"></i>
+                                        <i class="fa fa-trash" aria-hidden="true" style="color: red;"></i>
                                     </a>
                                 </td>
                             </tr>
@@ -48,6 +64,7 @@
                 </table>
             </div>
         </div>
-        {% include 'partials/confirm_delete_modal.html' %}
     </div>
+{#    {% include 'partials/confirm_delete_modal.html' %}#}
+</div>
 {% endblock body %}

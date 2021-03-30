@@ -20,7 +20,7 @@ from apps.tasks .models import Task
 def home(request):
     template_name = 'core/home.html'
     #traz todos do dia atual e que não esteja concluída
-    tasks = Task.objects.filter(end_time__range=(start_date, end_time), user=request.user).exclude(status='CD')
+    tasks = Task.objects.filter(end_time__range=(start_date, end_time), user=request.user).exclude(status='CA')
 #    tasks = Task.objects.filter(end_time=datetime.today()).exclude(status='CD')
 #    tasks = Task.objects.filter(end_time__month=now)
     context = {
@@ -33,7 +33,7 @@ def home(request):
 def search_tasks(request):
     template_name = 'core/search_tasks.html'
     query = request.GET.get('query')
-    tasks = Task.objects.filter(title__icontains=query, user=request.user).exclude(status='CD')
+    tasks = Task.objects.filter(title__icontains=query, user=request.user).exclude(status='CA')
     context = {
         'tasks': tasks
     }

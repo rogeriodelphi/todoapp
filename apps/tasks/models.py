@@ -26,9 +26,9 @@ class Task(models.Model):
     )
 
     STATUS_CHOICES = (
-        ('EX', 'Em execução'),
-        ('PD', 'Pendente'),
-        ('CD', 'Concluída'),
+        ('AF', 'A fazer'),
+        ('FA', 'Fazendo'),
+        ('CO', 'Concluída'),
     )
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField('Título da Tarefa', max_length=200)

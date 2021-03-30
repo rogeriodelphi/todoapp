@@ -9,16 +9,16 @@ class CategoryAdmin(admin.ModelAdmin):
     list_filter = ['user']
 
 def mark_all_tasks_done(modeladmin, request, queryset):
-    queryset.update(status='CD')
-mark_all_tasks_done.short_description = "Marcar como 'concluída' todas as tarefas"
+    queryset.update(status='AF')
+mark_all_tasks_done.short_description = "Marcar como 'A Fazer' todas as tarefas"
 
 def mark_all_tasks_pending(modeladmin, request, queryset):
-    queryset.update(status='PD')
-mark_all_tasks_pending.short_description = "Marcar como 'Pendente' todas as tarefas"
+    queryset.update(status='FA')
+mark_all_tasks_pending.short_description = "Marcar como 'Fazendo' todas as tarefas"
 
 def mark_all_tasks_running(modeladmin, request, queryset):
-    queryset.update(status='EX')
-mark_all_tasks_running.short_description = "Marcar como 'Em execução' todas as tarefas"
+    queryset.update(status='CO')
+mark_all_tasks_running.short_description = "Marcar como 'Concluída' todas as tarefas"
 
 
 @admin.register(Task)

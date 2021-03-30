@@ -8,12 +8,17 @@ Detalhe da Tarefa
     <div class="container">
         <div class="clearfix">
             <a class="btn btn-primary left" href="{% url 'task_calendar:calendar' %}"> Calendário </a>
-{#            <a class="btn btn-info right mr-2" href="{% url 'task_calendar:edit_task' event.pk %}"> Editar Evento </a>#}
+            <a class="btn btn-info right mr-2" href="{% url 'task_calendar:edit_task' task.pk %}"> Editar Tarefa </a>
         </div>
         
         <div class="clearfix">
             <h3>Tarefa: {{ task.title }}</h3>
-            <p>De <span style="color: gray;"><strong>{{ task.start_time }}</strong></span> Até <span style="color: gray;"><strong>{{ task.end_time }}</strong></span></p>
+            <p>
+                <strong>De
+                    <span style="color: red;">{{ task.start_time | date:'d/m/Y' }}</span> à
+                    <span style="color: red;">{{ task.end_time | date:'d/m/Y' }}</span>
+                </strong>
+            </p>
             <hr>
             <h5><p>{{ task.description }}</p></h5>
         </div>
