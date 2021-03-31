@@ -7,8 +7,8 @@ Detalhe da Tarefa
 {% block body %}
     <div class="container">
         <div class="clearfix">
-            <a class="btn btn-primary left" href="{% url 'task_calendar:calendar' %}"> Calendário </a>
-            <a class="btn btn-info right mr-2" href="{% url 'task_calendar:edit_task' task.pk %}"> Editar Tarefa </a>
+            <a class="btn btn-primary left" href="{% url 'tasks:calendar' %}"> Calendário </a>
+            <a class="btn btn-info right mr-2" href="{% url 'tasks:edit_task' task.pk %}"> Editar Tarefa </a>
         </div>
         
         <div class="clearfix">
@@ -25,7 +25,7 @@ Detalhe da Tarefa
         <hr>
         <div class="clearfix">
             <h4 class="left" > Membro(s) desta tarefa</h4>
-            <a class="btn btn-success right" href="{% url 'tasks:add_taskmember' task_id %}"> Adicionar Membro </a>
+            <a class="btn btn-success right" href="{% url 'tasks:add_taskmember' task.id %}"> Adicionar Membro </a>
         </div>
         <table class="table table-bordered">
             <thead>                  
@@ -45,7 +45,7 @@ Detalhe da Tarefa
                     <td>{{ member.user.username }}</td>
                     <td>{{ member.user.email }}</td>
                     <td>
-{#                        <a class="btn btn-danger" href="{% url 'calendarapp:remove_event' member.id %}">Remove</a>#}
+{#                        <a class="btn btn-danger" href="{% url 'tasks:remove_task' member.id %}">Remove</a>#}
                     </td>
                 </tr>
                 {% endfor %}

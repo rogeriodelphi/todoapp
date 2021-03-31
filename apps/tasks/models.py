@@ -1,6 +1,7 @@
+from django.contrib.auth.models import User
 from django.db import models
 from django.urls import reverse
-from django.contrib.auth.models import User
+
 
 class Category(models.Model):
     title = models.CharField('Nome', max_length=150)
@@ -12,7 +13,6 @@ class Category(models.Model):
         verbose_name = 'Categoria'
         verbose_name_plural = 'Categorias'
         ordering = ['id']
-
 
     def __str__(self):
         return self.title
@@ -35,7 +35,7 @@ class Task(models.Model):
     description = models.TextField('Descrição')
     start_time = models.DateField('Data Inicial')
     end_time = models.DateField('Data Final')
-    priority = models.CharField('Prioridade', max_length=1, choices=PRIORITY_CHOICES )
+    priority = models.CharField('Prioridade', max_length=1, choices=PRIORITY_CHOICES)
     category = models.ManyToManyField(Category)
     status = models.CharField('Status', max_length=2, choices=STATUS_CHOICES)
     created_date = models.DateTimeField(auto_now_add=True)
@@ -52,7 +52,7 @@ class Task(models.Model):
         return f'<a href="{url}"> {self.title} </a>'
 
     class Meta:
-        db_table  = 'Task'
+        db_table = 'Task'
         verbose_name = 'Tarefa'
         verbose_name_plural = 'Tarefas'
         ordering = ['id']
@@ -62,7 +62,9 @@ class Task(models.Model):
 
     def list_categories(self):
         return ", ".join([c.title for c in self.category.all()])
+
     list_categories.short_description = "Categorias"
+
 
 class TaskMember(models.Model):
     task = models.ForeignKey(Task, on_delete=models.CASCADE)

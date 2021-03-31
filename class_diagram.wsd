@@ -2,7 +2,7 @@
 
 skinparam roundcorner 10
 
-title Class Diagram - ToDo App
+title Class Diagram
 
 class User #pink {
     first_name: CharField

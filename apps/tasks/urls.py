@@ -10,13 +10,11 @@ urlpatterns = [
     path('categorias/excluir/<int:id_category>/', views.delete_category, name='delete_category'),
 
     path('', views.list_tasks, name='list_tasks'),
-    # path('adicionar/', views.add_task, name='add_task'),
     path('adicionar/', views.add_task, name='add_task'),
     path('editar/<int:id_task>/', views.edit_task, name='edit_task'),
     path('excluir/<int:id_task>/', views.task_delete, name='task_delete'),
 
-    # path('index', views.index, name='index'),
     path('calendar/', views.CalendarView.as_view(), name='calendar'),
-    path('detalhe/<int:task_id>/', views.task_details, name='task-detail'),
+    path('task/<int:task_id>/details', views.task_details, name='task-detail'),
     path('add_taskmember/<int:task_id>', views.add_taskmember, name='add_taskmember'),
 ]

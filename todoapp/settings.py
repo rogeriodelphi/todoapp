@@ -53,10 +53,9 @@ THIRD_APPS = [
 ]
 
 PROJECT_APPS = [
-    'core.apps.CoreConfig',
-    'tasks.apps.TasksConfig',
-    'accounts.apps.AccountsConfig',
-    'calendarapp.apps.CalendarappConfig',
+    'apps.core',
+    'apps.tasks',
+    'apps.accounts',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_APPS + PROJECT_APPS

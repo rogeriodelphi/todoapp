@@ -175,10 +175,10 @@ class CalendarView(LoginRequiredMixin, generic.ListView):
 @login_required(login_url='/contas/login/')
 def task_details(request, task_id):
     task = Task.objects.get(id=task_id)
-    # eventmember = EventMember.objects.filter(event=event)
+    taskmember = TaskMember.objects.filter(task=task)
     context = {
         'task': task,
-        # 'eventmember': eventmember
+        'taskmember': taskmember
     }
     return render(request, 'tasks/task-details.html', context)
 
@@ -202,4 +202,4 @@ def add_taskmember(request, task_id):
     context = {
         'form': forms
     }
-    return render(request, 'add_member.html', context)
+    return render(request, 'tasks/add_member.html', context)
