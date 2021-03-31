@@ -72,307 +72,67 @@
   }
 },
 {
-  "model": "sessions.session",
-  "pk": "1c2dxf5niqfs44k5tyij9rs1vqcqzlpy",
+  "model": "contenttypes.contenttype",
+  "pk": 10,
   "fields": {
-    "session_data": "NDM5MDlmMDU4OWJmMTUxM2RmYzFhYjcxM2E0MWJjYTQ0NGNhMmI5MTp7Il9hdXRoX3VzZXJfaWQiOiI0IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJhNWYwNTQ0ZWM1NjJhMzcyYjlhMTE4MjI1M2M4MTMyODgxNzdjYmZhIn0=",
-    "expire_date": "2020-07-07T14:53:53.160Z"
+    "app_label": "tasks",
+    "model": "eventmember"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "tasks",
+    "model": "taskmember"
   }
 },
 {
   "model": "sessions.session",
-  "pk": "1tn4v71zj2521t6s9lmgs33tg6d7ip42",
+  "pk": "22yj95r2g1mb8l9j606av14ab1llyvd9",
   "fields": {
-    "session_data": "NWI0ODgxZDA0NTExOWNiNGIxOWM4ODFkMDU2MGZjZjRmN2E4NzU4Mzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3NGFhMjk2NGM5MWRkNzAwZWI0MmIzMDUwZTUwNzVmZTNmNTcwZjE5In0=",
-    "expire_date": "2020-07-15T23:53:51.667Z"
+    "session_data": "NmI5MjlhMThiYmJmNTUxMTBhMjkzYmY0ZTJkMzMwYjZjZjczNmJiYzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJiODE2ZmUzY2I0MjEwOTQ5MDNmOWM0YWM4MTFjMjRmOWJjMTMzNDMzIn0=",
+    "expire_date": "2021-04-12T00:45:25.197Z"
   }
 },
 {
   "model": "sessions.session",
-  "pk": "22wv1wjye65widzvfmo3hs3biibrsm09",
+  "pk": "8p5mkogc6zgzcsd27ssofpipg7q417xu",
   "fields": {
-    "session_data": "NjRkZjQ3ODc3NzAxMjBhNTAxMTYwNmQ2MjcwMmJjYWZiZDQ1MjQwMjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJmMTI1YzNmZGMzNWRkNWM4MzdkZGE1MWQ1YjFkOGZmZTRhYjFjNTllIn0=",
-    "expire_date": "2020-09-09T15:20:07.311Z"
+    "session_data": "NmI5MjlhMThiYmJmNTUxMTBhMjkzYmY0ZTJkMzMwYjZjZjczNmJiYzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJiODE2ZmUzY2I0MjEwOTQ5MDNmOWM0YWM4MTFjMjRmOWJjMTMzNDMzIn0=",
+    "expire_date": "2021-04-13T03:42:31.022Z"
   }
 },
 {
   "model": "sessions.session",
-  "pk": "2bqsdrqga6dxj9qmg2odr1n786tbtg03",
+  "pk": "d5p1ar1lkj8m5egkg6ly4z3140h7znen",
   "fields": {
-    "session_data": "MTY3NjIxN2FiMTAxMTU5ZWFiMGVmNmE1OGUyMzEzMTgzYTY2MjFkNzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3ZDdkZjNkYmJjMzdiYjQzNmM4ODE5OWU0MzgyNWNjN2NlM2QwNjUwIn0=",
-    "expire_date": "2020-06-20T04:50:38.015Z"
+    "session_data": "NmI5MjlhMThiYmJmNTUxMTBhMjkzYmY0ZTJkMzMwYjZjZjczNmJiYzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJiODE2ZmUzY2I0MjEwOTQ5MDNmOWM0YWM4MTFjMjRmOWJjMTMzNDMzIn0=",
+    "expire_date": "2021-04-11T18:30:26.571Z"
   }
 },
 {
   "model": "sessions.session",
-  "pk": "2sw9bo111gv5muckwvip8qfz1cw0m7ci",
+  "pk": "k3lts6y9qhzyz5skfg0sgrelyal01x6k",
   "fields": {
-    "session_data": "NWI0ODgxZDA0NTExOWNiNGIxOWM4ODFkMDU2MGZjZjRmN2E4NzU4Mzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3NGFhMjk2NGM5MWRkNzAwZWI0MmIzMDUwZTUwNzVmZTNmNTcwZjE5In0=",
-    "expire_date": "2020-07-07T07:18:51.585Z"
+    "session_data": "NmI5MjlhMThiYmJmNTUxMTBhMjkzYmY0ZTJkMzMwYjZjZjczNmJiYzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJiODE2ZmUzY2I0MjEwOTQ5MDNmOWM0YWM4MTFjMjRmOWJjMTMzNDMzIn0=",
+    "expire_date": "2021-04-11T22:46:11.156Z"
   }
 },
 {
   "model": "sessions.session",
-  "pk": "39403e3z131rfdh4jtjui5kc1tt2ln0v",
+  "pk": "qyfpq1v5e8qw0dv545lkg4w73wf4zfbz",
   "fields": {
-    "session_data": "NWI0ODgxZDA0NTExOWNiNGIxOWM4ODFkMDU2MGZjZjRmN2E4NzU4Mzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3NGFhMjk2NGM5MWRkNzAwZWI0MmIzMDUwZTUwNzVmZTNmNTcwZjE5In0=",
-    "expire_date": "2020-07-11T05:59:07.491Z"
+    "session_data": "NmI5MjlhMThiYmJmNTUxMTBhMjkzYmY0ZTJkMzMwYjZjZjczNmJiYzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJiODE2ZmUzY2I0MjEwOTQ5MDNmOWM0YWM4MTFjMjRmOWJjMTMzNDMzIn0=",
+    "expire_date": "2021-04-11T23:23:31.094Z"
   }
 },
 {
   "model": "sessions.session",
-  "pk": "4a2lxftziq7f7k3av4r1tsz1omaurymf",
+  "pk": "uj2d6dyna7yrmz0u7yyl1oyiwe2ksthn",
   "fields": {
-    "session_data": "MTY3NjIxN2FiMTAxMTU5ZWFiMGVmNmE1OGUyMzEzMTgzYTY2MjFkNzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3ZDdkZjNkYmJjMzdiYjQzNmM4ODE5OWU0MzgyNWNjN2NlM2QwNjUwIn0=",
-    "expire_date": "2020-06-18T06:10:38.460Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "55vukr4jjwtmgu4267i4dx3hwgfznt9t",
-  "fields": {
-    "session_data": "NjRkZjQ3ODc3NzAxMjBhNTAxMTYwNmQ2MjcwMmJjYWZiZDQ1MjQwMjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJmMTI1YzNmZGMzNWRkNWM4MzdkZGE1MWQ1YjFkOGZmZTRhYjFjNTllIn0=",
-    "expire_date": "2020-07-24T04:03:08.778Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "56ajd5miebl24phxbs6gfiur7gpi9w6a",
-  "fields": {
-    "session_data": "NWI0ODgxZDA0NTExOWNiNGIxOWM4ODFkMDU2MGZjZjRmN2E4NzU4Mzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3NGFhMjk2NGM5MWRkNzAwZWI0MmIzMDUwZTUwNzVmZTNmNTcwZjE5In0=",
-    "expire_date": "2020-07-22T22:29:35.609Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "5qibfuk5n25zs63aup67t9q5damfdukl",
-  "fields": {
-    "session_data": "NWI0ODgxZDA0NTExOWNiNGIxOWM4ODFkMDU2MGZjZjRmN2E4NzU4Mzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3NGFhMjk2NGM5MWRkNzAwZWI0MmIzMDUwZTUwNzVmZTNmNTcwZjE5In0=",
-    "expire_date": "2020-07-22T22:24:57.839Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "66lko3wuwazw15mu8qrn3ktqp1xdlttb",
-  "fields": {
-    "session_data": "NWI0ODgxZDA0NTExOWNiNGIxOWM4ODFkMDU2MGZjZjRmN2E4NzU4Mzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3NGFhMjk2NGM5MWRkNzAwZWI0MmIzMDUwZTUwNzVmZTNmNTcwZjE5In0=",
-    "expire_date": "2020-07-11T04:41:58.758Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "9enwz7cfpkbmzw87pv5vti8l0520m9ww",
-  "fields": {
-    "session_data": "NjRkZjQ3ODc3NzAxMjBhNTAxMTYwNmQ2MjcwMmJjYWZiZDQ1MjQwMjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJmMTI1YzNmZGMzNWRkNWM4MzdkZGE1MWQ1YjFkOGZmZTRhYjFjNTllIn0=",
-    "expire_date": "2021-03-06T02:01:34.930Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "aihhnuftz50rwuak9lewcp1r20n8g6o4",
-  "fields": {
-    "session_data": "NjRkZjQ3ODc3NzAxMjBhNTAxMTYwNmQ2MjcwMmJjYWZiZDQ1MjQwMjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJmMTI1YzNmZGMzNWRkNWM4MzdkZGE1MWQ1YjFkOGZmZTRhYjFjNTllIn0=",
-    "expire_date": "2020-10-08T02:46:06.320Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "c64ubrt0wiqzcwjs1cplanr3n0qste7h",
-  "fields": {
-    "session_data": "NjRkZjQ3ODc3NzAxMjBhNTAxMTYwNmQ2MjcwMmJjYWZiZDQ1MjQwMjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJmMTI1YzNmZGMzNWRkNWM4MzdkZGE1MWQ1YjFkOGZmZTRhYjFjNTllIn0=",
-    "expire_date": "2020-07-26T03:46:19.876Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "d3l8awcs27jzn49cm0b5xz7j17l5z48b",
-  "fields": {
-    "session_data": "NjRkZjQ3ODc3NzAxMjBhNTAxMTYwNmQ2MjcwMmJjYWZiZDQ1MjQwMjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJmMTI1YzNmZGMzNWRkNWM4MzdkZGE1MWQ1YjFkOGZmZTRhYjFjNTllIn0=",
-    "expire_date": "2020-10-08T03:24:43.191Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "dvmda8ilgbc0jg8le557onnck9bwgph8",
-  "fields": {
-    "session_data": "Y2M4NGQyZTM1MTNjNDk1NzY1MWZhZGNhZDA1MzljMTY0ZGJmNGYzYTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3MzAzYjhhNTg3NDI3NjQ2NTY4MWE5NTQyZTg0ZjhhNWU1Mzc3NTMyIn0=",
-    "expire_date": "2020-06-24T04:25:08.786Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "eh07ytwpjn6nnnpb2v5qqqru74pjgkpd",
-  "fields": {
-    "session_data": "Y2M4NGQyZTM1MTNjNDk1NzY1MWZhZGNhZDA1MzljMTY0ZGJmNGYzYTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3MzAzYjhhNTg3NDI3NjQ2NTY4MWE5NTQyZTg0ZjhhNWU1Mzc3NTMyIn0=",
-    "expire_date": "2020-06-24T03:36:44.835Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "fl2olqveu7lgpppm2g313rnb12glxo9l",
-  "fields": {
-    "session_data": "NjRkZjQ3ODc3NzAxMjBhNTAxMTYwNmQ2MjcwMmJjYWZiZDQ1MjQwMjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJmMTI1YzNmZGMzNWRkNWM4MzdkZGE1MWQ1YjFkOGZmZTRhYjFjNTllIn0=",
-    "expire_date": "2020-07-22T22:33:18.888Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "ij49pz4orzl2bvaiit3hm6sqkl7nrtgx",
-  "fields": {
-    "session_data": "NDM5MDlmMDU4OWJmMTUxM2RmYzFhYjcxM2E0MWJjYTQ0NGNhMmI5MTp7Il9hdXRoX3VzZXJfaWQiOiI0IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJhNWYwNTQ0ZWM1NjJhMzcyYjlhMTE4MjI1M2M4MTMyODgxNzdjYmZhIn0=",
-    "expire_date": "2020-10-11T06:03:34.817Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "j0g2vcwl954r2d2e6gvkecnfvwqq1lv9",
-  "fields": {
-    "session_data": "Y2M4NGQyZTM1MTNjNDk1NzY1MWZhZGNhZDA1MzljMTY0ZGJmNGYzYTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3MzAzYjhhNTg3NDI3NjQ2NTY4MWE5NTQyZTg0ZjhhNWU1Mzc3NTMyIn0=",
-    "expire_date": "2020-06-23T04:39:53.620Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "jwpjc5m5opnd1h6ft6ci1p4k9q0k7hda",
-  "fields": {
-    "session_data": "NWI0ODgxZDA0NTExOWNiNGIxOWM4ODFkMDU2MGZjZjRmN2E4NzU4Mzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3NGFhMjk2NGM5MWRkNzAwZWI0MmIzMDUwZTUwNzVmZTNmNTcwZjE5In0=",
-    "expire_date": "2020-07-15T00:11:56.755Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "kgjeagd4b9q9gxnkhfenfxxtb35t2fp3",
-  "fields": {
-    "session_data": "NjRkZjQ3ODc3NzAxMjBhNTAxMTYwNmQ2MjcwMmJjYWZiZDQ1MjQwMjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJmMTI1YzNmZGMzNWRkNWM4MzdkZGE1MWQ1YjFkOGZmZTRhYjFjNTllIn0=",
-    "expire_date": "2020-07-24T04:04:20.494Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "kn3chyb6zvt8rbfp6mhtspwrn7l6qup7",
-  "fields": {
-    "session_data": "NjRkZjQ3ODc3NzAxMjBhNTAxMTYwNmQ2MjcwMmJjYWZiZDQ1MjQwMjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJmMTI1YzNmZGMzNWRkNWM4MzdkZGE1MWQ1YjFkOGZmZTRhYjFjNTllIn0=",
-    "expire_date": "2020-09-08T19:19:59.838Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "knfhcyupqpmr571mvvxjuith8dgse43r",
-  "fields": {
-    "session_data": "Y2M4NGQyZTM1MTNjNDk1NzY1MWZhZGNhZDA1MzljMTY0ZGJmNGYzYTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3MzAzYjhhNTg3NDI3NjQ2NTY4MWE5NTQyZTg0ZjhhNWU1Mzc3NTMyIn0=",
-    "expire_date": "2020-06-24T02:49:30.673Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "kqqmdndxzstcibgu6cg2qva4pp1nguku",
-  "fields": {
-    "session_data": "NWI0ODgxZDA0NTExOWNiNGIxOWM4ODFkMDU2MGZjZjRmN2E4NzU4Mzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3NGFhMjk2NGM5MWRkNzAwZWI0MmIzMDUwZTUwNzVmZTNmNTcwZjE5In0=",
-    "expire_date": "2020-07-16T18:46:10.538Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "lo9tyk42mpb8m4y82j85hb3d0v4a2ic4",
-  "fields": {
-    "session_data": "NWI0ODgxZDA0NTExOWNiNGIxOWM4ODFkMDU2MGZjZjRmN2E4NzU4Mzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3NGFhMjk2NGM5MWRkNzAwZWI0MmIzMDUwZTUwNzVmZTNmNTcwZjE5In0=",
-    "expire_date": "2020-07-21T21:30:32.003Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "nlfyu9mllqe32oe9a9ya4s7r59kskakz",
-  "fields": {
-    "session_data": "NjRkZjQ3ODc3NzAxMjBhNTAxMTYwNmQ2MjcwMmJjYWZiZDQ1MjQwMjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJmMTI1YzNmZGMzNWRkNWM4MzdkZGE1MWQ1YjFkOGZmZTRhYjFjNTllIn0=",
-    "expire_date": "2020-07-26T03:25:11.261Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "oe7t4hwf3l0qqrcynw8dvuliu5k9d7ud",
-  "fields": {
-    "session_data": "NjRkZjQ3ODc3NzAxMjBhNTAxMTYwNmQ2MjcwMmJjYWZiZDQ1MjQwMjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJmMTI1YzNmZGMzNWRkNWM4MzdkZGE1MWQ1YjFkOGZmZTRhYjFjNTllIn0=",
-    "expire_date": "2020-10-05T00:43:36.301Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "pkjb98jxeqmah9re83b3qdv3fdczki02",
-  "fields": {
-    "session_data": "Y2M4NGQyZTM1MTNjNDk1NzY1MWZhZGNhZDA1MzljMTY0ZGJmNGYzYTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3MzAzYjhhNTg3NDI3NjQ2NTY4MWE5NTQyZTg0ZjhhNWU1Mzc3NTMyIn0=",
-    "expire_date": "2020-06-26T23:10:45.210Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "t7z73w7uj90fyh4im40niyqj5i3cwsyn",
-  "fields": {
-    "session_data": "NjRkZjQ3ODc3NzAxMjBhNTAxMTYwNmQ2MjcwMmJjYWZiZDQ1MjQwMjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJmMTI1YzNmZGMzNWRkNWM4MzdkZGE1MWQ1YjFkOGZmZTRhYjFjNTllIn0=",
-    "expire_date": "2021-03-21T00:57:25.448Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "tauebz0w14tkxu9phredawqg7zbxuhnz",
-  "fields": {
-    "session_data": "NWI0ODgxZDA0NTExOWNiNGIxOWM4ODFkMDU2MGZjZjRmN2E4NzU4Mzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3NGFhMjk2NGM5MWRkNzAwZWI0MmIzMDUwZTUwNzVmZTNmNTcwZjE5In0=",
-    "expire_date": "2020-07-07T06:41:31.831Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "tio2ehaxdqrj4wh515pf8oj2qtpc54um",
-  "fields": {
-    "session_data": "MTY3NjIxN2FiMTAxMTU5ZWFiMGVmNmE1OGUyMzEzMTgzYTY2MjFkNzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3ZDdkZjNkYmJjMzdiYjQzNmM4ODE5OWU0MzgyNWNjN2NlM2QwNjUwIn0=",
-    "expire_date": "2020-06-21T06:31:42.028Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "uvn7ovx45tn6pxbil72f49lnt4cig1zs",
-  "fields": {
-    "session_data": "NWI0ODgxZDA0NTExOWNiNGIxOWM4ODFkMDU2MGZjZjRmN2E4NzU4Mzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3NGFhMjk2NGM5MWRkNzAwZWI0MmIzMDUwZTUwNzVmZTNmNTcwZjE5In0=",
-    "expire_date": "2020-07-15T03:37:22.595Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "w0x81zgccghrlda6x2s942bqwa127nba",
-  "fields": {
-    "session_data": "NWI0ODgxZDA0NTExOWNiNGIxOWM4ODFkMDU2MGZjZjRmN2E4NzU4Mzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3NGFhMjk2NGM5MWRkNzAwZWI0MmIzMDUwZTUwNzVmZTNmNTcwZjE5In0=",
-    "expire_date": "2020-07-17T02:47:03.684Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "wj4yje1wz3eigi6wdevsv06fg1ezguv8",
-  "fields": {
-    "session_data": "ZmE5MTRiNDk4NTQxMzlhNTI1Y2Q3Njc1OGIwY2QzMmVkYTY1MDMxNDp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJmMGYwYWM0ZDA5Y2Q5YTBjMmRkOThiYTkyMTg2MjI0NjE2N2JmNmMxIn0=",
-    "expire_date": "2020-07-15T00:01:24.024Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "wx10p0afir2z8yt5s1onelhroupdqeg9",
-  "fields": {
-    "session_data": "NjRkZjQ3ODc3NzAxMjBhNTAxMTYwNmQ2MjcwMmJjYWZiZDQ1MjQwMjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJmMTI1YzNmZGMzNWRkNWM4MzdkZGE1MWQ1YjFkOGZmZTRhYjFjNTllIn0=",
-    "expire_date": "2020-07-24T04:05:03.228Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "x3rbjdf329uh161jldc4takwh05kuaq7",
-  "fields": {
-    "session_data": "Y2M4NGQyZTM1MTNjNDk1NzY1MWZhZGNhZDA1MzljMTY0ZGJmNGYzYTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3MzAzYjhhNTg3NDI3NjQ2NTY4MWE5NTQyZTg0ZjhhNWU1Mzc3NTMyIn0=",
-    "expire_date": "2020-06-24T04:19:28.484Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "yqldpeqsztl89g830mybk6gcfrup6r6o",
-  "fields": {
-    "session_data": "NDM5MDlmMDU4OWJmMTUxM2RmYzFhYjcxM2E0MWJjYTQ0NGNhMmI5MTp7Il9hdXRoX3VzZXJfaWQiOiI0IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJhNWYwNTQ0ZWM1NjJhMzcyYjlhMTE4MjI1M2M4MTMyODgxNzdjYmZhIn0=",
-    "expire_date": "2020-10-11T06:06:17.662Z"
+    "session_data": "NmI5MjlhMThiYmJmNTUxMTBhMjkzYmY0ZTJkMzMwYjZjZjczNmJiYzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJiODE2ZmUzY2I0MjEwOTQ5MDNmOWM0YWM4MTFjMjRmOWJjMTMzNDMzIn0=",
+    "expire_date": "2021-04-12T21:20:01.317Z"
   }
 },
 {
@@ -700,19 +460,91 @@
   }
 },
 {
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add event member",
+    "content_type": 10,
+    "codename": "add_eventmember"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change event member",
+    "content_type": 10,
+    "codename": "change_eventmember"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete event member",
+    "content_type": 10,
+    "codename": "delete_eventmember"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view event member",
+    "content_type": 10,
+    "codename": "view_eventmember"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add task member",
+    "content_type": 11,
+    "codename": "add_taskmember"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change task member",
+    "content_type": 11,
+    "codename": "change_taskmember"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete task member",
+    "content_type": 11,
+    "codename": "delete_taskmember"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view task member",
+    "content_type": 11,
+    "codename": "view_taskmember"
+  }
+},
+{
   "model": "auth.user",
   "pk": 1,
   "fields": {
-    "password": "pbkdf2_sha256$150000$lc9JYh1hXwPB$SC18A7KoqBxEF+gidl6qaQyi8Q7ey+1if7UDpAaIjPo=",
-    "last_login": "2021-03-07T00:57:25.439Z",
+    "password": "pbkdf2_sha256$150000$48gFEpiokeDb$G07dZlpVsLqsmlYhdLufVYY+gZdjErUjmqRONJfLyko=",
+    "last_login": "2021-03-30T03:42:31.013Z",
     "is_superuser": true,
     "username": "rogerio.martins",
-    "first_name": "Rog\u00e9rio",
-    "last_name": "Martins",
-    "email": "rogerio.martins@ifbaiano.edu.br",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
     "is_staff": true,
     "is_active": true,
-    "date_joined": "2020-06-01T04:23:06Z",
+    "date_joined": "2021-03-28T17:57:08.118Z",
     "groups": [],
     "user_permissions": []
   }
@@ -721,242 +553,199 @@
   "model": "auth.user",
   "pk": 2,
   "fields": {
-    "password": "pbkdf2_sha256$150000$vVJjfwjUMKf2$y63JitJPFSYTwU+CD11gKq4GtaQNBuBXs3vvqR7K1JU=",
-    "last_login": "2020-07-01T00:11:36.277Z",
-    "is_superuser": true,
-    "username": "rogeriodelphi",
-    "first_name": "Rog\u00e9rio",
-    "last_name": "Delphi",
-    "email": "rogeriodelphi@gmail.com",
-    "is_staff": true,
-    "is_active": true,
-    "date_joined": "2020-06-02T07:20:37Z",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "auth.user",
-  "pk": 3,
-  "fields": {
-    "password": "pbkdf2_sha256$180000$e01eoPTLNg7E$9bIpeZet8YDGPmU4YP/EArr5eDoazcI42o7JoiErhqU=",
-    "last_login": "2020-06-04T04:27:35.575Z",
+    "password": "pbkdf2_sha256$150000$Zs4uN9bQACJu$W+tqt8mBFrdmR2BpDuqV828IjLt2ZmQIh8jbI52J9bM=",
+    "last_login": "2021-03-28T22:41:57.518Z",
     "is_superuser": false,
-    "username": "rogerio",
-    "first_name": "",
-    "last_name": "",
-    "email": "rogeriodelphi@gmail.com",
-    "is_staff": true,
+    "username": "davi.martins",
+    "first_name": "Davi",
+    "last_name": "Martins",
+    "email": "davi.martins@mail.com",
+    "is_staff": false,
     "is_active": true,
-    "date_joined": "2020-06-02T07:23:32Z",
+    "date_joined": "2021-03-28T22:38:19Z",
     "groups": [],
     "user_permissions": [
       25,
-      28
+      29,
+      30
     ]
   }
 },
 {
-  "model": "auth.user",
-  "pk": 4,
-  "fields": {
-    "password": "pbkdf2_sha256$150000$LJ7C7A8yMFKi$31+G605jpRxpOYkxBdALzhuaEyqaodhbz5xQlXRFnhQ=",
-    "last_login": "2020-09-27T06:06:17.635Z",
-    "is_superuser": true,
-    "username": "rbmdesenvolvimento",
-    "first_name": "Rog\u00e9rio",
-    "last_name": "Martins",
-    "email": "rbmdesenvolvimento@gmail.com",
-    "is_staff": true,
-    "is_active": true,
-    "date_joined": "2020-06-02T07:37:23Z",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "auth.user",
-  "pk": 5,
-  "fields": {
-    "password": "pbkdf2_sha256$150000$YQiIsQuJ7JS9$fvmMGvde+XRFn71TrTb0iQ8PtURY6zzO6IRy1H05A0c=",
-    "last_login": "2021-03-07T00:53:32.103Z",
-    "is_superuser": false,
-    "username": "davi.santana",
-    "first_name": "Davi",
-    "last_name": "de Santana",
-    "email": "reidavizinho@hotmaim.com.br",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2020-06-09T03:32:46.317Z",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "auth.user",
-  "pk": 6,
-  "fields": {
-    "password": "pbkdf2_sha256$150000$6mVHEKcIlUAu$StKZ8KKS9Y6zH2Cu39nTHLjyGW5m7JY8QWHhupYjkLc=",
-    "last_login": null,
-    "is_superuser": false,
-    "username": "rogerio.martines",
-    "first_name": "ROGERIO",
-    "last_name": "MARTINS",
-    "email": "rbmdesenvolvimento@gmail.com",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2020-06-09T05:52:56.146Z",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "auth.user",
-  "pk": 7,
-  "fields": {
-    "password": "pbkdf2_sha256$150000$E3z8zT32tTRW$KC+b/ShZLGQHNowS7UUm8PV3W8mJ/IOAYT9oSHaGpxo=",
-    "last_login": "2021-03-07T00:49:38.929Z",
-    "is_superuser": false,
-    "username": "paulo.santos",
-    "first_name": "Paulo",
-    "last_name": "Santos",
-    "email": "",
-    "is_staff": true,
-    "is_active": true,
-    "date_joined": "2021-03-07T00:48:25Z",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
   "model": "tasks.category",
   "pk": 1,
   "fields": {
-    "name": "Alimenta\u00e7\u00e3o",
-    "description": "Alimenta\u00e7\u00e3o resid\u00eancia",
-    "owner": 4
+    "title": "Python e Django",
+    "description": "",
+    "user": 1
   }
 },
 {
   "model": "tasks.category",
   "pk": 2,
   "fields": {
-    "name": "Transporte",
+    "title": "JavaScript",
     "description": "",
-    "owner": 4
+    "user": 1
   }
 },
 {
   "model": "tasks.category",
+  "pk": 3,
+  "fields": {
+    "title": "Portugu\u00eas",
+    "description": "Revisar o assunto de Ortografia e suas coloca\u00e7\u00f5es",
+    "user": 2
+  }
+},
+{
+  "model": "tasks.category",
+  "pk": 4,
+  "fields": {
+    "title": "Gr\u00e1ficos",
+    "description": "",
+    "user": 1
+  }
+},
+{
+  "model": "tasks.category",
+  "pk": 5,
+  "fields": {
+    "title": "Relat\u00f3rios",
+    "description": "",
+    "user": 1
+  }
+},
+{
+  "model": "tasks.category",
+  "pk": 6,
+  "fields": {
+    "title": "Desenvolvimento",
+    "description": "",
+    "user": 1
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 4,
+  "fields": {
+    "user": 2,
+    "title": "Estudar e revisar Ortografia",
+    "description": "Ler o livro da p\u00e1gina 5 a 12 e depois estudar o caderno de resumo!",
+    "start_time": "2021-03-28",
+    "end_time": "2021-03-28",
+    "priority": "B",
+    "status": "AF",
+    "created_date": "2021-03-28T22:40:45.974Z",
+    "category": [
+      3
+    ]
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 6,
+  "fields": {
+    "user": 1,
+    "title": "Gr\u00e1ficos no Django",
+    "description": "Gr\u00e1ficos no Django usando Chart.js, ler o artigo: https://medium.com/code-rocket-blog/trabalhando-com-gr%C3%A1ficos-no-django-usando-chart-js-495aa6abbe0f",
+    "start_time": "2021-03-29",
+    "end_time": "2021-03-29",
+    "priority": "A",
+    "status": "AF",
+    "created_date": "2021-03-28T23:51:31.446Z",
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 7,
+  "fields": {
+    "user": 1,
+    "title": "Gerando PDF a partir de HTML no Admin do Django",
+    "description": "Criando o projeto\r\nAntes de tudo precisamos criar o projeto, para isso crie um ambiente virtual com o pipenv (Caso n\u00e3o esteja familiarizado com o pipenv leia esse post onde explico tudinho) e instale o django com:\r\n$ pipenv install django==2.0\r\nCrie o projeto executando o comando abaixo:\r\n$ django-admin.py startproject project .\r\nCrie a aplica\u00e7\u00e3o que armazenar\u00e1 toda a nossa l\u00f3gica com:\r\n$ python manage.py startapp reports",
+    "start_time": "2021-03-28",
+    "end_time": "2021-03-28",
+    "priority": "B",
+    "status": "FA",
+    "created_date": "2021-03-29T00:03:35.741Z",
+    "category": [
+      5
+    ]
+  }
+},
+{
+  "model": "tasks.task",
   "pk": 8,
   "fields": {
-    "name": "Alimenta\u00e7\u00e3o",
-    "description": "",
-    "owner": 3
+    "user": 1,
+    "title": "Aula D\u00e9ployez une application Django -  2. Configurez un espace serveur",
+    "description": "D\u00e9ployez une application Django -  2. Configurez un espace serveur - https://openclassrooms.com/en/courses/4425101-deployez-une-application-django/4688335-configurez-un-espace-serveur",
+    "start_time": "2021-03-22",
+    "end_time": "2021-03-22",
+    "priority": "A",
+    "status": "CO",
+    "created_date": "2021-03-29T00:17:44.009Z",
+    "category": [
+      1,
+      6
+    ]
   }
 },
 {
-  "model": "tasks.category",
-  "pk": 18,
+  "model": "tasks.task",
+  "pk": 9,
   "fields": {
-    "name": "Administra\u00e7\u00e3o da Rede de Computadores",
-    "description": "",
-    "owner": 1
+    "user": 1,
+    "title": "Aula D\u00e9ployez une application Django -  3. T\u00e9l\u00e9chargez l'application sur le serveur distant",
+    "description": "D\u00e9ployez une application Django -  3. T\u00e9l\u00e9chargez l'application sur le serveur distant - https://openclassrooms.com/en/courses/4425101-deployez-une-application-django/4688407-telechargez-lapplication-sur-le-serveur-distant",
+    "start_time": "2021-03-23",
+    "end_time": "2021-03-23",
+    "priority": "A",
+    "status": "CO",
+    "created_date": "2021-03-29T00:18:20.806Z",
+    "category": [
+      1,
+      6
+    ]
   }
 },
 {
-  "model": "tasks.category",
-  "pk": 20,
+  "model": "tasks.task",
+  "pk": 10,
   "fields": {
-    "name": "Administra\u00e7\u00e3o dos Servidores",
-    "description": "",
-    "owner": 1
-  }
-},
-{
-  "model": "tasks.category",
-  "pk": 21,
-  "fields": {
-    "name": "Desenvolvimento SADIF Web",
-    "description": "Implementar rotinas no sistema.",
-    "owner": 1
-  }
-},
-{
-  "model": "tasks.category",
-  "pk": 22,
-  "fields": {
-    "name": "Desenvolvimento Agenda IF Baiano",
-    "description": "Implementar rotinas no sistema.",
-    "owner": 1
-  }
-},
-{
-  "model": "tasks.category",
-  "pk": 23,
-  "fields": {
-    "name": "Backups",
-    "description": "",
-    "owner": 1
-  }
-},
-{
-  "model": "tasks.category",
-  "pk": 24,
-  "fields": {
-    "name": "Sistemas",
-    "description": "",
-    "owner": 1
-  }
-},
-{
-  "model": "tasks.category",
-  "pk": 27,
-  "fields": {
-    "name": "Executar testes unit\u00e1rios",
-    "description": "Executar testes unit\u00e1rios",
-    "owner": 4
-  }
-},
-{
-  "model": "tasks.category",
-  "pk": 28,
-  "fields": {
-    "name": "Portugu\u00eas",
-    "description": "",
-    "owner": 7
-  }
-},
-{
-  "model": "tasks.category",
-  "pk": 29,
-  "fields": {
-    "name": "Matem\u00e1tica",
-    "description": "",
-    "owner": 7
-  }
-},
-{
-  "model": "tasks.category",
-  "pk": 30,
-  "fields": {
-    "name": "Estudar Crase",
-    "description": "Todos os assuntos de crase",
-    "owner": 5
+    "user": 1,
+    "title": "Aula",
+    "description": "D\u00e9ployez une application Django -  4. Utilisez le serveur HTTP Nginx - https://openclassrooms.com/en/courses/4425101-deployez-une-application-django/4688553-utilisez-le-serveur-http-nginx",
+    "start_time": "2021-03-23",
+    "end_time": "2021-03-23",
+    "priority": "A",
+    "status": "CO",
+    "created_date": "2021-03-29T00:18:48.455Z",
+    "category": [
+      1,
+      6
+    ]
   }
 },
 {
   "model": "tasks.task",
   "pk": 11,
   "fields": {
-    "name": "Backup dos Servidores e Fitas",
-    "description": "Execu\u00e7\u00e3o dos Backups",
-    "end_date": "2020-06-24",
-    "priority": "B",
-    "status": "PD",
-    "owner": 1,
+    "user": 1,
+    "title": "Aula D\u00e9ployez une application Django -  4. Utilisez le serveur HTTP Nginx",
+    "description": "D\u00e9ployez une application Django -  4. Utilisez le serveur HTTP Nginx - https://openclassrooms.com/en/courses/4425101-deployez-une-application-django/4688553-utilisez-le-serveur-http-nginx",
+    "start_time": "2021-03-29",
+    "end_time": "2021-03-29",
+    "priority": "A",
+    "status": "AF",
+    "created_date": "2021-03-29T00:19:19.276Z",
     "category": [
-      23
+      1,
+      6
     ]
   }
 },
@@ -964,242 +753,46 @@
   "model": "tasks.task",
   "pk": 12,
   "fields": {
-    "name": "Criar logs dos Servidores",
-    "description": "Criar os logs necess\u00e1rios",
-    "end_date": "2020-06-23",
+    "user": 1,
+    "title": "Aula D\u00e9ployez une application Django -  5. Configurez Gunicorn et Supervisor",
+    "description": "D\u00e9ployez une application Django -  5. Configurez Gunicorn et Supervisor - https://openclassrooms.com/en/courses/4425101-deployez-une-application-django/4688628-configurez-gunicorn-et-supervisor",
+    "start_time": "2021-03-29",
+    "end_time": "2021-03-29",
     "priority": "A",
-    "status": "EX",
-    "owner": 1,
+    "status": "AF",
+    "created_date": "2021-03-29T00:19:51.598Z",
     "category": [
-      18,
-      20
+      1,
+      6
     ]
   }
 },
 {
-  "model": "tasks.task",
-  "pk": 13,
-  "fields": {
-    "name": "Refatora\u00e7\u00e3o de Rotinas",
-    "description": "Refatora\u00e7\u00e3o de Rotinas nos sistemas",
-    "end_date": "2020-06-08",
-    "priority": "A",
-    "status": "CD",
-    "owner": 1,
-    "category": [
-      24
-    ]
-  }
-},
-{
-  "model": "tasks.task",
-  "pk": 14,
-  "fields": {
-    "name": "Backup dos Servidores",
-    "description": "Backup dos Servidores",
-    "end_date": "2020-06-23",
-    "priority": "A",
-    "status": "EX",
-    "owner": 1,
-    "category": [
-      2,
-      8,
-      18
-    ]
-  }
-},
-{
-  "model": "tasks.task",
-  "pk": 15,
-  "fields": {
-    "name": "Backups dos logs",
-    "description": "Realizar backups nos logs DSETs.",
-    "end_date": "2020-06-08",
-    "priority": "A",
-    "status": "CD",
-    "owner": 1,
-    "category": [
-      20
-    ]
-  }
-},
-{
-  "model": "tasks.task",
-  "pk": 16,
-  "fields": {
-    "name": "Criar gr\u00e1fico dos alunos",
-    "description": "Gr\u00e1fico dos alunos matriculados no ano letivo e por sexo.",
-    "end_date": "2020-06-10",
-    "priority": "A",
-    "status": "CD",
-    "owner": 1,
-    "category": [
-      21
-    ]
-  }
-},
-{
-  "model": "tasks.task",
-  "pk": 17,
-  "fields": {
-    "name": "Servidores",
-    "description": "Manuten\u00e7\u00e3o",
-    "end_date": "2020-06-27",
-    "priority": "A",
-    "status": "PD",
-    "owner": 1,
-    "category": [
-      20
-    ]
-  }
-},
-{
-  "model": "tasks.task",
-  "pk": 18,
-  "fields": {
-    "name": "Instala\u00e7\u00e3o de SO",
-    "description": "Instalar Sistemas Operacionais",
-    "end_date": "2020-06-30",
-    "priority": "M",
-    "status": "PD",
-    "owner": 1,
-    "category": []
-  }
-},
-{
-  "model": "tasks.task",
-  "pk": 19,
-  "fields": {
-    "name": "teste2",
-    "description": "asdsdsd",
-    "end_date": "2020-06-28",
-    "priority": "A",
-    "status": "EX",
-    "owner": 1,
-    "category": [
-      18
-    ]
-  }
-},
-{
-  "model": "tasks.task",
-  "pk": 20,
-  "fields": {
-    "name": "teste3",
-    "description": "ddssd",
-    "end_date": "2020-06-30",
-    "priority": "A",
-    "status": "EX",
-    "owner": 1,
-    "category": [
-      20
-    ]
-  }
-},
-{
-  "model": "tasks.task",
-  "pk": 21,
-  "fields": {
-    "name": "teste4",
-    "description": "ffgf",
-    "end_date": "2020-06-27",
-    "priority": "B",
-    "status": "EX",
-    "owner": 1,
-    "category": [
-      18
-    ]
-  }
-},
-{
-  "model": "tasks.task",
-  "pk": 24,
-  "fields": {
-    "name": "Leitura de Dados",
-    "description": "teste",
-    "end_date": "2020-09-20",
-    "priority": "B",
-    "status": "EX",
-    "owner": 1,
-    "category": [
-      2,
-      18
-    ]
-  }
-},
-{
-  "model": "tasks.task",
-  "pk": 25,
-  "fields": {
-    "name": "Desenvolver Senac News",
-    "description": "TEste",
-    "end_date": "2021-02-19",
-    "priority": "B",
-    "status": "EX",
-    "owner": 1,
-    "category": [
-      18,
-      20
-    ]
-  }
-},
-{
-  "model": "tasks.task",
-  "pk": 26,
-  "fields": {
-    "name": "Estudar Pronomes",
-    "description": "Estudar Pronomes demonstrativos",
-    "end_date": "2021-03-06",
-    "priority": "M",
-    "status": "PD",
-    "owner": 7,
-    "category": [
-      28
-    ]
-  }
-},
-{
-  "model": "tasks.task",
-  "pk": 28,
-  "fields": {
-    "name": "Responder as quest\u00f5es de Crase",
-    "description": "Responder as quest\u00f5es de Crase",
-    "end_date": "2021-03-06",
-    "priority": "M",
-    "status": "EX",
-    "owner": 5,
-    "category": [
-      28
-    ]
-  }
-},
-{
-  "model": "accounts.userprofile",
+  "model": "tasks.taskmember",
   "pk": 1,
   "fields": {
-    "photo": "photos/rogerio50x50_6RNRSWS.jpg",
-    "cel_phone": "(75) 98805-7797",
+    "task": 8,
     "user": 1
   }
 },
 {
   "model": "accounts.userprofile",
-  "pk": 2,
+  "pk": 1,
   "fields": {
-    "photo": "photos/rogerio50x50_naYsVu2.jpg",
+    "photo": "photos/imageedit_24_4441533075_O3wugPY.jpg",
     "cel_phone": "(75) 98805-7797",
-    "user": 4
+    "user": 1
   }
 },
 {
   "model": "admin.logentry",
   "pk": 1,
   "fields": {
-    "action_time": "2020-06-02T13:32:50.461Z",
+    "action_time": "2021-03-28T22:37:12.882Z",
     "user": 1,
-    "content_type": 7,
+    "content_type": 4,
     "object_id": "2",
-    "object_repr": "Transporte",
+    "object_repr": "davi.martins",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}]"
   }
@@ -1208,507 +801,39 @@
   "model": "admin.logentry",
   "pk": 2,
   "fields": {
-    "action_time": "2020-06-02T13:33:08.770Z",
+    "action_time": "2021-03-28T22:38:20.478Z",
     "user": 1,
-    "content_type": 7,
-    "object_id": "1",
-    "object_repr": "Alimenta\u00e7\u00e3o",
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "davi.martins",
     "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Nome\"]}}]"
+    "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\", \"email\", \"user_permissions\", \"last_login\", \"date_joined\"]}}]"
   }
 },
 {
   "model": "admin.logentry",
   "pk": 3,
   "fields": {
-    "action_time": "2020-06-02T13:39:40.701Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "1",
-    "object_repr": "Fazer compras de Mercado",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 4,
-  "fields": {
-    "action_time": "2020-06-02T13:45:07.849Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "3",
-    "object_repr": "Entreteniimeno",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 5,
-  "fields": {
-    "action_time": "2020-06-04T04:03:17.893Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "4",
-    "object_repr": "Despesas",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Nome\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 6,
-  "fields": {
-    "action_time": "2020-06-04T04:05:56.897Z",
-    "user": 1,
-    "content_type": 4,
-    "object_id": "4",
-    "object_repr": "rbmdesenvolvimento",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Superuser status\", \"Last login\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 7,
-  "fields": {
-    "action_time": "2020-06-04T04:06:20.723Z",
-    "user": 1,
-    "content_type": 4,
-    "object_id": "4",
-    "object_repr": "rbmdesenvolvimento",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 8,
-  "fields": {
-    "action_time": "2020-06-04T04:06:35.295Z",
-    "user": 1,
-    "content_type": 4,
-    "object_id": "4",
-    "object_repr": "rbmdesenvolvimento",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 9,
-  "fields": {
-    "action_time": "2020-06-04T04:08:41.375Z",
-    "user": 1,
-    "content_type": 4,
-    "object_id": "4",
-    "object_repr": "rbmdesenvolvimento",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 10,
-  "fields": {
-    "action_time": "2020-06-04T04:08:55.105Z",
-    "user": 1,
-    "content_type": 4,
-    "object_id": "4",
-    "object_repr": "rbmdesenvolvimento",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Staff status\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 11,
-  "fields": {
-    "action_time": "2020-06-04T04:11:30.094Z",
-    "user": 4,
-    "content_type": 4,
-    "object_id": "3",
-    "object_repr": "rogerio",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Staff status\", \"User permissions\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 12,
-  "fields": {
-    "action_time": "2020-06-04T04:12:48.006Z",
-    "user": 4,
-    "content_type": 4,
-    "object_id": "3",
-    "object_repr": "rogerio",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 13,
-  "fields": {
-    "action_time": "2020-06-04T04:12:50.994Z",
-    "user": 4,
-    "content_type": 4,
-    "object_id": "3",
-    "object_repr": "rogerio",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 14,
-  "fields": {
-    "action_time": "2020-06-04T04:13:59.780Z",
-    "user": 3,
-    "content_type": 7,
-    "object_id": "7",
-    "object_repr": "Licita\u00e7\u00e3o",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 15,
-  "fields": {
-    "action_time": "2020-06-04T04:15:06.026Z",
-    "user": 1,
-    "content_type": 4,
-    "object_id": "3",
-    "object_repr": "rogerio",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"User permissions\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 16,
-  "fields": {
-    "action_time": "2020-06-04T04:15:42.748Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "6",
-    "object_repr": "Tecnologia",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 17,
-  "fields": {
-    "action_time": "2020-06-04T04:15:53.504Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "5",
-    "object_repr": "Constru\u00e7\u00e3o",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 18,
-  "fields": {
-    "action_time": "2020-06-04T04:27:10.838Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "8",
-    "object_repr": "Estudos",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 19,
-  "fields": {
-    "action_time": "2020-06-06T06:35:22.878Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "2",
-    "object_repr": "Backup dos Servidores",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 20,
-  "fields": {
-    "action_time": "2020-06-06T06:35:27.385Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "2",
-    "object_repr": "Backup dos Servidores",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 21,
-  "fields": {
-    "action_time": "2020-06-06T07:10:00.753Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "1",
-    "object_repr": "Fazer compras de Mercado",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Descri\\u00e7\\u00e3o\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 22,
-  "fields": {
-    "action_time": "2020-06-07T02:49:23.497Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "5",
-    "object_repr": "Backup dos Servidores",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 23,
-  "fields": {
-    "action_time": "2020-06-07T03:19:15.176Z",
+    "action_time": "2021-03-28T23:12:21.401Z",
     "user": 1,
     "content_type": 8,
     "object_id": "4",
-    "object_repr": "Limpeza dos logs",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 24,
-  "fields": {
-    "action_time": "2020-06-07T03:19:24.429Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "6",
-    "object_repr": "BAckps",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 25,
-  "fields": {
-    "action_time": "2020-06-21T04:44:13.249Z",
-    "user": 1,
-    "content_type": 4,
-    "object_id": "1",
-    "object_repr": "rogerio.martins",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"first_name\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 26,
-  "fields": {
-    "action_time": "2020-06-21T07:12:16.912Z",
-    "user": 1,
-    "content_type": 9,
-    "object_id": "1",
-    "object_repr": "rogerio.martins",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 27,
-  "fields": {
-    "action_time": "2020-06-22T04:25:45.567Z",
-    "user": 1,
-    "content_type": 9,
-    "object_id": "1",
-    "object_repr": "rogerio.martins",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"photo\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 28,
-  "fields": {
-    "action_time": "2020-06-22T04:27:43.140Z",
-    "user": 1,
-    "content_type": 9,
-    "object_id": "1",
-    "object_repr": "rogerio.martins",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"photo\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 29,
-  "fields": {
-    "action_time": "2020-06-22T04:35:22.163Z",
-    "user": 1,
-    "content_type": 4,
-    "object_id": "4",
-    "object_repr": "rbmdesenvolvimento",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\", \"email\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 30,
-  "fields": {
-    "action_time": "2020-06-22T04:35:36.341Z",
-    "user": 1,
-    "content_type": 4,
-    "object_id": "4",
-    "object_repr": "rbmdesenvolvimento",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 31,
-  "fields": {
-    "action_time": "2020-06-22T05:35:48.541Z",
-    "user": 1,
-    "content_type": 4,
-    "object_id": "2",
-    "object_repr": "rogeriodelphi",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 32,
-  "fields": {
-    "action_time": "2020-06-22T05:36:35.061Z",
-    "user": 1,
-    "content_type": 4,
-    "object_id": "2",
-    "object_repr": "rogeriodelphi",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"is_staff\", \"is_superuser\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 33,
-  "fields": {
-    "action_time": "2020-06-23T04:49:34.931Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "8",
-    "object_repr": "Alimenta\u00e7\u00e3o",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"name\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 34,
-  "fields": {
-    "action_time": "2020-06-23T05:45:30.009Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "11",
-    "object_repr": "Backup dos Servidores e Fitas",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"category\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 35,
-  "fields": {
-    "action_time": "2020-06-23T06:40:26.429Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "12",
-    "object_repr": "Criar logs dos Servidores",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"end_date\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 36,
-  "fields": {
-    "action_time": "2020-06-23T06:44:11.479Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "11",
-    "object_repr": "Backup dos Servidores e Fitas",
+    "object_repr": "Estudar e revisar Ortografia",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 37,
+  "pk": 4,
   "fields": {
-    "action_time": "2021-03-07T00:48:25.853Z",
+    "action_time": "2021-03-30T04:12:51.614Z",
     "user": 1,
-    "content_type": 4,
-    "object_id": "7",
-    "object_repr": "paulo.santos",
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "rogerio.martins",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 38,
-  "fields": {
-    "action_time": "2021-03-07T00:48:36.234Z",
-    "user": 1,
-    "content_type": 4,
-    "object_id": "7",
-    "object_repr": "paulo.santos",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 39,
-  "fields": {
-    "action_time": "2021-03-07T00:48:46.276Z",
-    "user": 1,
-    "content_type": 4,
-    "object_id": "7",
-    "object_repr": "paulo.santos",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"is_staff\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 40,
-  "fields": {
-    "action_time": "2021-03-07T00:53:02.731Z",
-    "user": 1,
-    "content_type": 4,
-    "object_id": "5",
-    "object_repr": "davi.santana",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
   }
 }
 ]

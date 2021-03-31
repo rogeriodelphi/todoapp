@@ -1,5 +1,5 @@
 from django.forms.widgets import DateInput, Textarea
-from apps.tasks.models import Task, Category
+from apps.tasks.models import Task, Category, TaskMember
 from django import forms
 
 class CategoryForm(forms.ModelForm):
@@ -25,3 +25,9 @@ class TaskForm(forms.ModelForm):
         widgets = {
             'description': Textarea(attrs={'cols': 80, 'rows': 3}),
         }
+
+
+class AddMemberForm(forms.ModelForm):
+    class Meta:
+        model = TaskMember
+        fields = ['user']

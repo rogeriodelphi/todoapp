@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from apps.tasks.models import Category, Task
+from apps.tasks.models import Category, Task, TaskMember
 
 
 class CategoryAdmin(admin.ModelAdmin):
@@ -31,6 +31,11 @@ class TaskAdmin(admin.ModelAdmin):
 #    def list_categories(self, obj):
 #        return ", ".join([c.name for c in obj.category.all()])
 #    list_categories.short_description = "Categorias"
+
+@admin.register(TaskMember)
+class TaskMemberAdmin(admin.ModelAdmin):
+    model = TaskMember
+    list_display = ['task', 'user']
 
 
 admin.site.register(Category, CategoryAdmin)

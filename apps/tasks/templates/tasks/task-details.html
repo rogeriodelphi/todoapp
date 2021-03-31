@@ -25,7 +25,7 @@ Detalhe da Tarefa
         <hr>
         <div class="clearfix">
             <h4 class="left" > Membro(s) desta tarefa</h4>
-{#            <a class="btn btn-success right" href="{% url 'calendarapp:add_eventmember' event.id %}"> Adicionar Membro </a>#}
+            <a class="btn btn-success right" href="{% url 'tasks:add_taskmember' task_id %}"> Adicionar Membro </a>
         </div>
         <table class="table table-bordered">
             <thead>                  
@@ -38,7 +38,7 @@ Detalhe da Tarefa
                 </tr>
               </thead>
               <tbody>
-                {% for member in eventmember %}
+                {% for member in taskmember %}
                 <tr role="row">
                     <td>{{ forloop.counter }}</td>
                     <td>{{ member.user.first_name }} {{ member.user.last_name }}</td>

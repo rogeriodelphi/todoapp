@@ -18,4 +18,5 @@ urlpatterns = [
     # path('index', views.index, name='index'),
     path('calendar/', views.CalendarView.as_view(), name='calendar'),
     path('detalhe/<int:task_id>/', views.task_details, name='task-detail'),
+    path('add_taskmember/<int:task_id>', views.add_taskmember, name='add_taskmember'),
 ]

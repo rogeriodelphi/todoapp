@@ -9,8 +9,8 @@ import calendar
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 
-from .forms import CategoryForm, TaskForm
-from .models import Category, Task
+from .forms import CategoryForm, TaskForm, AddMemberForm
+from .models import Category, Task, TaskMember
 from .utils import Calendar
 
 
@@ -181,3 +181,25 @@ def task_details(request, task_id):
         # 'eventmember': eventmember
     }
     return render(request, 'tasks/task-details.html', context)
+
+
+def add_taskmember(request, task_id):
+    forms = AddMemberForm()
+    if request.method == 'POST':
+        forms = AddMemberForm(request.POST)
+        if forms.is_valid():
+            member = TaskMember.objects.filter(task=task_id)
+            task = Task.objects.get(id=task_id)
+            if member.count() <= 9:
+                user = forms.cleaned_data['user']
+                TaskMember.objects.create(
+                    task=task,
+                    user=user
+                )
+                return redirect('tasks:calendar')
+            else:
+                print('--------------Limite de usuários excedido!-----------------')
+    context = {
+        'form': forms
+    }
+    return render(request, 'add_member.html', context)
