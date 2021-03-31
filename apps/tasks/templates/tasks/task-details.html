@@ -45,7 +45,7 @@ Detalhe da Tarefa
                     <td>{{ member.user.username }}</td>
                     <td>{{ member.user.email }}</td>
                     <td>
-{#                        <a class="btn btn-danger" href="{% url 'tasks:remove_task' member.id %}">Remove</a>#}
+                        <a class="btn btn-danger" href="{% url 'tasks:remove_task' member.id %}">Excluir</a>
                     </td>
                 </tr>
                 {% endfor %}

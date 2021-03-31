@@ -28,10 +28,11 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown07">
-                            <a class="dropdown-item" href="{% url 'tasks:add_category' %}">Adicionar Categoria</a>
-                            <a class="dropdown-item" href="{% url 'tasks:list_categories' %}">Listar categorias</a>
-                            <a class="dropdown-item" href="{% url 'tasks:add_task' %}">Adicionar Tarefas</a>
-                            <a class="dropdown-item" href="{% url 'tasks:list_tasks' %}">Listar Tarefas</a>
+                            <a class="dropdown-item" href="{% url 'tasks:calendar' %}"><i class="fa fa-calendar"></i> Ver Calendário</a>
+                            <a class="dropdown-item" href="{% url 'tasks:add_category' %}"><i class="fa fa-plus-square"></i> Adicionar Categoria</a>
+                            <a class="dropdown-item" href="{% url 'tasks:list_categories' %}"><i class="fa fa-list-ol"></i> Listar categorias</a>
+                            <a class="dropdown-item" href="{% url 'tasks:add_task' %}"><i class="fa fa-plus-square"></i> Adicionar Tarefas</a>
+                            <a class="dropdown-item" href="{% url 'tasks:list_tasks' %}"><i class="fa fa-list-ol"></i> Listar Tarefas</a>
                         </div>
                     </li>
                 </ul>

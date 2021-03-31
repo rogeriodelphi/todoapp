@@ -21,7 +21,7 @@ def home(request):
     template_name = 'core/home.html'
     #traz todos do dia atual e que não esteja concluída
     tasks = Task.objects.filter(end_time__range=(start_date, end_time), user=request.user).exclude(status='CA')
-#    tasks = Task.objects.filter(end_time=datetime.today()).exclude(status='CD')
+#    tasks = Task.objects.filter(end_time=datetime.today()).exclude(status='CO')
 #    tasks = Task.objects.filter(end_time__month=now)
     context = {
         'tasks': tasks
