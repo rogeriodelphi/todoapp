@@ -123,7 +123,9 @@ def add_task(request):
 @login_required(login_url='/contas/login/')
 def list_tasks(request):
     template_name = 'tasks/list_tasks.html'
-    tasks = Task.objects.filter(user=request.user).exclude(status='CO')
+    # Retorna todas as tarefas, com exceção das que estão concluídas
+    # tasks = Task.objects.filter(user=request.user).exclude(status='CO')
+    tasks = Task.objects.filter(user=request.user)
     context = {
         'tasks': tasks
     }

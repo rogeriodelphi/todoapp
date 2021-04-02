@@ -6,16 +6,22 @@
     Adicionar Categoria - {{ block.super }}
 {% endblock title %}
 
-{% block body %}
+{% block content %}
     <div class="container">
-        <h1>Lista de Categorias</h1>
-        {% include 'partials/messages.html' %}
         <div class="row">
-            <div class="col-md-12">
-                <table class="table table-hover">
-                    <thead>
+            <div class="col-12"></div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-header">
+                <h2 class="pull-left"><i class="fa fa-table"></i> Listagem de Categorias</h2>
+                {% include 'partials/messages.html' %}
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-striped" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
                         <tr>
-                            <th scope="col">#</th>
+                            <th scope="col">ID</th>
                             <th scope="col">Título</th>
                             <th scope="col">Descrição</th>
                             <th scope="col">Ações</th>
@@ -28,8 +34,12 @@
                                 <td>{{ category.title }}</td>
                                 <td>{{ category.description }}</td>
                                 <td>
-                                    <a href="{% url 'tasks:edit_category' category.id %}" class="btn btn-primary btn-sm">Editar</a>
-                                    <a href="{% url 'tasks:delete_category' category.id %}" class="btn btn-danger btn-sm confirm-delete" data-toggle="modal", data-target="#confirmDeleteModal" id="deleteButton-{{ category.id }}">Excluir</a>
+                                    <a href="{% url 'tasks:edit_category' category.id %}">
+                                        <i class="fa fa-pencil-square" aria-hidden="true" style="color: #6B8E23;"></i>
+                                    </a>
+                                    <a href="{% url 'tasks:delete_category' category.id %}">
+                                        <i class="fa fa-trash" aria-hidden="true" style="color: red;"></i>
+                                    </a>
                                 </td>
                             </tr>
                         {% endfor %}
@@ -39,4 +49,5 @@
         </div>
         {% include 'partials/confirm_delete_modal.html' %}
     </div>
-{% endblock body %}
+</div>
+{% endblock content %}

@@ -27,7 +27,8 @@ class TaskAdmin(admin.ModelAdmin):
     search_fields = ['title', 'description']
     list_filter = ['priority', 'user', 'category', 'status']
     actions = [mark_all_tasks_done, mark_all_tasks_pending, mark_all_tasks_running]
-
+    # raw_id_fields = ['category']
+    filter_horizontal = ['category']
 #    def list_categories(self, obj):
 #        return ", ".join([c.name for c in obj.category.all()])
 #    list_categories.short_description = "Categorias"
@@ -37,6 +38,8 @@ class TaskMemberAdmin(admin.ModelAdmin):
     model = TaskMember
     list_display = ['task', 'user']
 
-
-admin.site.register(Category, CategoryAdmin)
-#admin.site.register(Task, TaskAdmin)
+@admin.register(Category)
+class CategoryAdmin(admin.ModelAdmin):
+    model = Category
+    list_display = ('id', 'title', 'description')
+    search_fields = ('title', 'description')

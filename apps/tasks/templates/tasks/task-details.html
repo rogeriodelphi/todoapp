@@ -4,7 +4,7 @@
 Detalhe da Tarefa
 {% endblock %}
 
-{% block body %}
+{% block content %}
     <div class="container">
         <div class="clearfix">
             <a class="btn btn-primary left" href="{% url 'tasks:calendar' %}"> Calendário </a>
@@ -12,7 +12,7 @@ Detalhe da Tarefa
         </div>
         
         <div class="clearfix">
-            <h3>Tarefa: {{ task.title }}</h3>
+            <h3>Título da Tarefa: {{ task.title }}</h3>
             <p>
                 <strong>De
                     <span style="color: red;">{{ task.start_time | date:'d/m/Y' }}</span> à
@@ -20,17 +20,20 @@ Detalhe da Tarefa
                 </strong>
             </p>
             <hr>
-            <h5><p>{{ task.description }}</p></h5>
+            <table class="table table-bordered">
+                <h4><p>{{ task.description }}</p></h4>
+            </table>
         </div>
         <hr>
+        <br><br>
         <div class="clearfix">
-            <h4 class="left" > Membro(s) desta tarefa</h4>
+            <h4 class="left" > Membro(s) da tarefa</h4>
             <a class="btn btn-success right" href="{% url 'tasks:add_taskmember' task.id %}"> Adicionar Membro </a>
         </div>
         <table class="table table-bordered">
             <thead>                  
-                <tr>
-                  <th style="width: 10px">#</th>
+                <tr class="text-center">
+                  <th style="width: 10px">Seq.</th>
                   <th>Nome</th>
                   <th>Uuário</th>
                   <th>E-mail</th>
@@ -44,8 +47,10 @@ Detalhe da Tarefa
                     <td>{{ member.user.first_name }} {{ member.user.last_name }}</td>
                     <td>{{ member.user.username }}</td>
                     <td>{{ member.user.email }}</td>
-                    <td>
-                        <a class="btn btn-danger" href="{% url 'tasks:remove_task' member.id %}">Excluir</a>
+                    <td class="text-center">
+                        <a href="{% url 'tasks:remove_task' member.id %}">
+                            <i class="fa fa-trash" aria-hidden="true" style="color: red;"></i>
+                        </a>
                     </td>
                 </tr>
                 {% endfor %}

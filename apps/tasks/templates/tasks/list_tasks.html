@@ -6,7 +6,7 @@
     Lista de Tarefas - {{ block.super }}
 {% endblock title %}
 
-{% block body %}
+{% block content %}
 <div class="container">
     <div class="row">
         <div class="col-12"></div>
@@ -24,6 +24,7 @@
                             <th scope="col">ID</th>
                             <th scope="col">Tarefa</th>
                             <th scope="col">Descrição</th>
+                            <th scope="col">Categoria</th>
                             <th scope="col">Data Inicial</th>
                             <th scope="col">Data Final</th>
                             <th scope="col">Prioridade</th>
@@ -36,7 +37,8 @@
                             <tr>
                                 <td scope="row">{{ task.id }}</td>
                                 <td scope="row">{{ task.title }}</td>
-                                <td scope="row">{{ task.description }}</td>
+                                <td scope="row">{{ task.description | truncatewords_html:35 }}</td>
+                                <td scope="row">{{ task.list_categories }}</td>
                                 <td scope="row">{{ task.start_time|date:'d/m/Y' }}</td>
                                 <td scope="row">{{ task.end_time|date:'d/m/Y' }}</td>
                                 <td scope="row">{{ task.get_priority_display }}</td>
@@ -67,4 +69,4 @@
     </div>
 {#    {% include 'partials/confirm_delete_modal.html' %}#}
 </div>
-{% endblock body %}
+{% endblock content %}
