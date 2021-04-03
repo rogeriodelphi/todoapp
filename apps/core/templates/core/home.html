@@ -10,23 +10,37 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Tarefas do Dia</h1>
+                <h1>Todas as Tarefas da Semana {{ num_week }}</h1>
                 <table class="table">
                     <thead>
                         <tr>
-                            <th scope="col">Id</th>
+                            <th scope="col">ID</th>
                             <th scope="col">Tarefa</th>
                             <th scope="col">Descrição</th>
+                            <th scope="col">Categoria</th>
+                            <th scope="col">Data Inicial</th>
                             <th scope="col">Data Final</th>
+                            <th scope="col">Prioridade</th>
+                            <th scope="col">Status</th>
                         </tr>
                     </thead>
                     <tbody>
                         {% for task in tasks %}
                             <tr>
-                                <th>{{ task.id }}</th>
-                                <th>{{ task.title }}</th>
-                                <td>{{ task.description }}</td>
-                                <td>{{ task.end_time|date:'d/m/Y' }}</td>
+                                <td scope="row">{{ task.id }}</td>
+                                <td scope="row">{{ task.title }}</td>
+                                <td scope="row">{{ task.description | truncatewords_html:35 }}</td>
+                                <td scope="row">{{ task.list_categories }}</td>
+                                <td scope="row">{{ task.start_time|date:'d/m/Y' }}</td>
+                                <td scope="row">{{ task.end_time|date:'d/m/Y' }}</td>
+                                <td scope="row">{{ task.get_priority_display }}</td>
+                                {% if task.status == 'FA' %}
+                                    <td><span class="badge badge-warning">{{ task.get_status_display }}</span></td>
+                                {% elif task.status == 'AF' %}
+                                    <td><span class="badge badge-danger">{{ task.get_status_display }}</span></td>
+                                {% else %}
+                                    <td><span class="badge badge-success">{{ task.get_status_display }}</span></td>
+                                {% endif %}
                             </tr>
                         {% endfor %}
                     </tbody>

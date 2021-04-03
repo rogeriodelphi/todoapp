@@ -42,13 +42,13 @@
                                 <td scope="row">{{ task.start_time|date:'d/m/Y' }}</td>
                                 <td scope="row">{{ task.end_time|date:'d/m/Y' }}</td>
                                 <td scope="row">{{ task.get_priority_display }}</td>
-                                {% if task.status == 'FA' %}
-                                    <td><span class="badge badge-warning">{{ task.get_status_display }}</span></td>
-                                {% elif task.status == 'AF' %}
-                                    <td><span class="badge badge-danger">{{ task.get_status_display }}</span></td>
-                                {% else %}
-                                    <td><span class="badge badge-success">{{ task.get_status_display }}</span></td>
-                                {% endif %}
+                                    {% if task.status == 'FA' %}
+                                        <td><span class="badge badge-warning">{{ task.get_status_display }}</span></td>
+                                    {% elif task.status == 'AF' %}
+                                        <td><span class="badge badge-danger">{{ task.get_status_display }}</span></td>
+                                    {% else %}
+                                        <td><span class="badge badge-success">{{ task.get_status_display }}</span></td>
+                                    {% endif %}
                                 <td>
                                     <a href="{% url 'tasks:task-detail' task.id %}">
                                         <i class="fa fa-search" aria-hidden="true" style="color: green;"></i>
