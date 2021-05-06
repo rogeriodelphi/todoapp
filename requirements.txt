@@ -16,7 +16,7 @@ pytz==2020.1
 requests==2.23.0
 self==2020.12.3
 shell==1.0.1
-six==1.15.0
+six==1.16.0
 sqlparse==0.3.1
 urllib3==1.25.9
 wcwidth==0.2.2
