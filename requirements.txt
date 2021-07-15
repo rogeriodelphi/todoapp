@@ -13,7 +13,7 @@ psycopg2-binary==2.8.5
 Pygments==2.8.1
 python-decouple==3.3
 pytz==2020.1
-requests==2.23.0
+requests==2.26.0
 self==2020.12.3
 shell==1.0.1
 six==1.15.0
