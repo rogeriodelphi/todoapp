@@ -6,7 +6,7 @@ curtsies==0.3.1
 decorator==4.4.2
 Django==3.2.4
 django-widget-tweaks==1.4.8
-greenlet==0.4.15
+greenlet==1.1.1
 idna==2.9
 Pillow==8.2.0
 psycopg2-binary==2.8.5
