@@ -17,6 +17,6 @@ requests==2.23.0
 self==2020.12.3
 shell==1.0.1
 six==1.15.0
-sqlparse==0.3.1
+sqlparse==0.4.2
 urllib3==1.25.9
 wcwidth==0.2.2
