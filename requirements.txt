@@ -11,7 +11,7 @@ idna==2.9
 Pillow==8.2.0
 psycopg2-binary==2.8.5
 Pygments==2.8.1
-python-decouple==3.3
+python-decouple==3.5
 pytz==2020.1
 requests==2.23.0
 self==2020.12.3
