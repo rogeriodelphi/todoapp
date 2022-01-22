@@ -8,4 +8,5 @@ urlpatterns = [
     path('contas/', include('apps.accounts.urls', namespace='accounts')),
     path('', include('core.urls', namespace='core')),
     path('', include('apps.tasks.urls', namespace='tasks')),
+    path('oauth/', include('social_django.urls', namespace='social'))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
