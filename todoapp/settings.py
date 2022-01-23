@@ -201,4 +201,6 @@ MESSAGE_TAGS = {
 
 }
 
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
+
 #DATE_INPUT_FORMATS = ["%d/%m/%Y"]
