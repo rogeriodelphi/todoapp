@@ -5,7 +5,7 @@ cffi==1.15.0
 chardet==3.0.4
 cryptography==36.0.1
 curtsies==0.3.1
-decorator==4.4.2
+decorator==5.1.1
 defusedxml==0.7.1
 Django==3.2.6
 django-widget-tweaks==1.4.8
