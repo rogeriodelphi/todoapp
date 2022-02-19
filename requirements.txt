@@ -7,12 +7,14 @@ cryptography==36.0.1
 curtsies==0.3.1
 decorator==4.4.2
 defusedxml==0.7.1
-Django==3.2.6
+Django==3.2.12
+django-ranged-response==0.2.0
+django-recaptcha==3.0.0
 django-widget-tweaks==1.4.8
 greenlet==0.4.15
 idna==2.9
 oauthlib==3.1.1
-Pillow==8.3.2
+Pillow==9.0.1
 psycopg2-binary==2.8.5
 pycparser==2.21
 Pygments==2.8.1
@@ -31,4 +33,3 @@ sqlparse==0.3.1
 typing-extensions==3.10.0.2
 urllib3==1.25.11
 wcwidth==0.2.2
-django-recaptcha==3.0.0
