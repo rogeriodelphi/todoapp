@@ -204,3 +204,6 @@ MESSAGE_TAGS = {
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
 #DATE_INPUT_FORMATS = ["%d/%m/%Y"]
+
+
+GOOGLE_RECAPTCHA_SECRET_KEY = '6LflD4ceAAAAADvaAoot3cAFjxnU_T_bq015cBpN'

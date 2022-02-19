@@ -1,8 +1,12 @@
+import json
+
+import requests
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout, update_session_auth_hash
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import PasswordChangeForm
 from django.contrib.auth.models import User
+from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
 
 from .forms import UserForm, UserProfileForm, UserFormChangeInformation
@@ -29,14 +33,27 @@ def add_user(request):
 def user_login(request):
     template_name = 'accounts/user_login.html'
     if request.method == 'POST':
-        username = request.POST.get('username')
-        password = request.POST.get('password')
-        user = authenticate(username=username, password=password)
-        if user is not None:
-            login(request, user)
-            return redirect(request.GET.get('next', '/'))
+        captcha_token = request.POST.get("g-recaptcha-response")
+        cap_url = "https://www.google.com/recaptcha/api/siteverify"
+        cap_secret = "6LflD4ceAAAAACq6YQst3lTxAddXA3uutfui1tWY"
+        cap_data = {"secret": cap_secret, "response": captcha_token}
+        cap_server_response = requests.post(url=cap_url, data=cap_data)
+        cap_json = json.loads(cap_server_response.text)
+
+        if cap_json['success'] == False:
+            messages.error(request, "Captcha inválido, tente novamente!")
+            return HttpResponseRedirect("/")
         else:
-            messages.error(request, "Usuário ou senha inválidos")
+            # print("cap_server_response: " + cap_server_response.text)
+            # print("Captcha Token: " + captcha_token)
+            username = request.POST.get('username')
+            password = request.POST.get('password')
+            user = authenticate(username=username, password=password)
+            if user is not None:
+                login(request, user)
+                return redirect(request.GET.get('next', '/'))
+            else:
+                messages.error(request, "Usuário ou senha inválidos")
     return render(request, template_name, {})
 
 
