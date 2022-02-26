@@ -49,13 +49,14 @@ class Task(models.Model):
     @property
     def get_html_url(self):
         url = reverse('tasks:task-detail', args=(self.id,))
+        print(url)
         return f'<a href="{url}"> {self.title} </a>'
 
     class Meta:
         db_table = 'Task'
         verbose_name = 'Tarefa'
         verbose_name_plural = 'Tarefas'
-        ordering = ['id']
+        ordering = ['-start_time']
 
     def __str__(self):
         return self.title
