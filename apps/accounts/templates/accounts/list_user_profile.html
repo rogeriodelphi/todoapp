@@ -46,7 +46,7 @@
                                     </form>
                                 </div>
                             </div>
-                            <div class="card shadow">
+                            <div class="card shadow mb-3">
                                 <div class="card-header py-1">
                                     <p class="text-primary m-0 font-weight-bold">Dados do Usuário</p>
                                 </div>
@@ -77,6 +77,45 @@
                                     </form>
                                 </div>
                             </div>
+                            <div class="card shadow mb-3">
+                                <div class="card-header py-1">
+                                    <p class="text-primary m-0 font-weight-bold">Contatos do Usuário</p>
+                                </div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="p-3 mb-2 bg-light text-dark">
+                                            <div class="form-row">
+                                                <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="endereco"><strong>Endereço</strong></label>
+                                                    <input readonly class="form-control" type="text" placeholder="{{ profile.endereco }}" name="endereco">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <div class="form-group">
+                                                    <label for="numero"><strong>Número</strong></label>
+                                                    <input readonly class="form-control" type="text" placeholder="{{ profile.numero }}" name="numero">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="complemento"><strong>Complemento</strong></label>
+                                                    <input readonly class="form-control" type="text" placeholder="{{ profile.complemento }}" name="complemento">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="bairro"><strong>Bairro</strong></label>
+                                                    <input readonly class="form-control" type="text" placeholder="{{ profile.bairro }}" name="bairro">
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>

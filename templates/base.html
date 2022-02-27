@@ -120,6 +120,13 @@
                     monthNames: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
                 }
             );
+            $('#id_data_nascimento').datepicker(
+                {
+                    dateFormat: "yy-mm-dd",
+                    dayNamesMin: ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"],
+                    monthNames: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
+                }
+            );
         });
         $(document).ready(function() {
             $('#id_category').select2();

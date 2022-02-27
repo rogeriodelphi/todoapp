@@ -14,6 +14,12 @@ class UserProfile(models.Model):
     data_nascimento = models.DateField(verbose_name='Data de Nascimento', null=True)
     sexo = models.CharField(max_length=1, choices=SX_CHOICES, default="", blank=True, null=True)
     cpf = models.CharField(max_length=14, unique=True, verbose_name="CPF", blank=True, null=True)
+
+    endereco = models.CharField(max_length=50, verbose_name="Endereço", blank=True, null=True)
+    numero = models.CharField(max_length=6, verbose_name="Número", blank=True, null=True)
+    complemento = models.CharField(max_length=60, verbose_name="Complemento", null=True, blank=True)
+    bairro = models.CharField(max_length=50, verbose_name="Bairro", null=True, blank=True)
+
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile')
 
     class Meta:
