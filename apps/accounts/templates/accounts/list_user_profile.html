@@ -9,7 +9,7 @@
 {% endblock title %}
 
 {% block content %}
-        <div class="container-fluid">
+        <div class="container">
             <h3 class="text-dark mb-4">Meu Perfil</h3>
             <div class="row mb-3">
                 {% if profile %}
@@ -29,18 +29,20 @@
                                 </div>
                                 <div class="card-body">
                                     <form>
-                                        <div class="form-row">
-                                            <div class="col-md-3">
-                                                <div class="form-group"><label for="username"><strong>Usuário</strong></label><input readonly class="form-control" type="text" value="{{ user.username }}" name="username"></div>
-                                            </div>
-                                            <div class="col-md-5">
-                                                <div class="form-group"><label for="email"><strong>E-mail</strong></label><input readonly class="form-control" type="email" value="{{ profile.user.email }}" name="email"></div>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <div class="form-group"><label for="first_name"><strong>Primeiro Nome</strong></label><input readonly class="form-control" type="text" value="{{ user.first_name }}" name="first_name"></div>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <div class="form-group"><label for="last_name"><strong>Último Nome</strong></label><input readonly class="form-control" type="text" value="{{ user.last_name }}" name="last_name"></div>
+                                        <div class="p-3 mb-2 bg-light text-dark">
+                                            <div class="form-row">
+                                                <div class="col-md-3">
+                                                    <div class="form-group"><label for="username"><strong>Usuário</strong></label><input readonly class="form-control" type="text" value="{{ user.username }}" name="username"></div>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <div class="form-group"><label for="email"><strong>E-mail</strong></label><input readonly class="form-control" type="email" value="{{ profile.user.email }}" name="email"></div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-group"><label for="first_name"><strong>Primeiro Nome</strong></label><input readonly class="form-control" type="text" value="{{ user.first_name }}" name="first_name"></div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-group"><label for="last_name"><strong>Último Nome</strong></label><input readonly class="form-control" type="text" value="{{ user.last_name }}" name="last_name"></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </form>
@@ -54,19 +56,19 @@
                                     <form>
                                         <div class="p-3 mb-2 bg-light text-dark">
                                             <div class="form-row">
-                                                <div class="col-md-2">
+                                                <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="data_nascimento"><strong>Data de Nascimento</strong></label>
                                                         <input readonly class="form-control" type="text" placeholder="{{ profile.data_nascimento | date:'d/m/Y' }}" name="data_nascimento">
                                                     </div>
                                                 </div>
-                                                <div class="col-md-2">
+                                                <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="sexo"><strong>Sexo</strong></label>
                                                         <input readonly class="form-control" type="text" placeholder="{{ profile.get_sexo_display }}" name="sexo">
                                                     </div>
                                                 </div>
-                                                <div class="col-md-2">
+                                                <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label for="cpf"><strong>CPF</strong></label>
                                                         <input readonly class="form-control" type="text" placeholder="{{ profile.cpf }}" name="cpf">
@@ -85,13 +87,13 @@
                                     <form>
                                         <div class="p-3 mb-2 bg-light text-dark">
                                             <div class="form-row">
-                                                <div class="col-md-4">
+                                                <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label for="endereco"><strong>Endereço</strong></label>
                                                     <input readonly class="form-control" type="text" placeholder="{{ profile.endereco }}" name="endereco">
                                                 </div>
                                             </div>
-                                            <div class="col-md-1">
+                                            <div class="col-md-2">
                                                 <div class="form-group">
                                                     <label for="numero"><strong>Número</strong></label>
                                                     <input readonly class="form-control" type="text" placeholder="{{ profile.numero }}" name="numero">
@@ -104,12 +106,29 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-3">
+                                            <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label for="bairro"><strong>Bairro</strong></label>
                                                     <input readonly class="form-control" type="text" placeholder="{{ profile.bairro }}" name="bairro">
                                                 </div>
                                             </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="cidade"><strong>Cidade</strong></label>
+                                                    <input readonly class="form-control" type="text" value="{{ profile.cidade }}" name="cidade">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="form-group">
+                                                    <label for="estado"><strong>Estado</strong></label>
+                                                    <input readonly class="form-control" type="text" value="{{ profile.estado }}" name="estado">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="form-group">
+                                                    <label for="cep"><strong>CEP</strong></label>
+                                                    <input readonly class="form-control" type="text" placeholder="{{ profile.cep }}" name="cep">
+                                                </div>
                                             </div>
                                         </div>
                                     </form>
