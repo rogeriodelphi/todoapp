@@ -7,24 +7,65 @@
 {% endblock title %}
 
 {% block content %}
-    <div class="container">
-        <h1>Adicionar Categoria</h1>
+<div class="row">
+    <div class="col-12"></div>
+</div>
+<div class="card">
+    <div class="card-header">
+        <h2><i class="fa fa-users"></i> Cadastro de Categorias</h2>
         {% include 'partials/messages.html' %}
-        <div class="row">
-            <div class="col-md-12">
-                <form action="." method="POST">
-                {% csrf_token %}
-                    <div class="form-group">
-                        <label for="{{ form.title.id_for_label }}"><strong>Título:</strong></label>
-                        {{ form.title|add_class:"form-control"|attr:"autofocus" }}
+    </div>
+
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table" id="dataTable" width="100%" cellspacing="0">
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="container">
+                        <div class="p-3 mb-2 bg-light text-dark">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label for="{{ form.title.id_for_label }}"><strong>Título:</strong></label>
+                                    {{ form.title|add_class:"form-control"|attr:"autofocus" }}
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="{{ form.description.id_for_label }}"><strong>Descrição:</strong></label>
+                                    {{ form.description|add_class:"form-control" }}
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="{{ form.description.id_for_label }}"><strong>Descrição:</strong></label>
-                        {{ form.description|add_class:"form-control" }}
+                    <div class="container">
+                        <div class="p-3 mb-2 bg-light text-dark">
+                            <button type="submit" class="btn btn-info">Salvar</button>
+                            <a href="{{request.META.HTTP_REFERER}}" class="btn btn-primary">Voltar</a>
+                        </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Salvar</button>
                 </form>
-            </div>
+            </table>
         </div>
     </div>
+</div>
+
+
+{#    <div class="container">#}
+{#        <h1>Adicionar Categoria</h1>#}
+{#        {% include 'partials/messages.html' %}#}
+{#        <div class="row">#}
+{#            <div class="col-md-12">#}
+{#                <form action="." method="POST">#}
+{#                {% csrf_token %}#}
+{#                    <div class="form-group">#}
+{#                        <label for="{{ form.title.id_for_label }}"><strong>Título:</strong></label>#}
+{#                        {{ form.title|add_class:"form-control"|attr:"autofocus" }}#}
+{#                    </div>#}
+{#                    <div class="form-group">#}
+{#                        <label for="{{ form.description.id_for_label }}"><strong>Descrição:</strong></label>#}
+{#                        {{ form.description|add_class:"form-control" }}#}
+{#                    </div>#}
+{#                    <button type="submit" class="btn btn-primary">Salvar</button>#}
+{#                </form>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
 {% endblock content %}
