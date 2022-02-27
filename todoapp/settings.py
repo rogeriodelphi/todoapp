@@ -50,6 +50,7 @@ DJANGO_APPS = [
 
 THIRD_APPS = [
     'social_django',
+    'crispy_forms',
     'widget_tweaks',
 ]
 

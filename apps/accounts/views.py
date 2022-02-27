@@ -24,6 +24,7 @@ def add_user(request):
             f.set_password(f.password)
             f.save()
             messages.success(request, "Usuário salvo com sucesso!")
+            # return redirect('accounts:user_login')
     # se a requisição for do tipo GET, instancia o formulário 'form'
     form = UserForm()
     context['form'] = form

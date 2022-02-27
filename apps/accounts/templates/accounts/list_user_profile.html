@@ -46,12 +46,45 @@
                                     </form>
                                 </div>
                             </div>
+                            <div class="card shadow">
+                                <div class="card-header py-1">
+                                    <p class="text-primary m-0 font-weight-bold">Dados do Usuário</p>
+                                </div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="p-3 mb-2 bg-light text-dark">
+                                            <div class="form-row">
+                                                <div class="col-md-2">
+                                                    <div class="form-group">
+                                                        <label for="data_nascimento"><strong>Data de Nascimento</strong></label>
+                                                        <input readonly class="form-control" type="text" placeholder="{{ profile.data_nascimento | date:'d/m/Y' }}" name="data_nascimento">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-group">
+                                                        <label for="sexo"><strong>Sexo</strong></label>
+                                                        <input readonly class="form-control" type="text" placeholder="{{ profile.get_sexo_display }}" name="sexo">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-group">
+                                                        <label for="cpf"><strong>CPF</strong></label>
+                                                        <input readonly class="form-control" type="text" placeholder="{{ profile.cpf }}" name="cpf">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 {% else %}
-                    <h2>Você ainda não criou um perfil.</h2>
-                    <a href="{% url 'accounts:add_user_profile' %}" class="btn btn-primary">Criar Perfil</a>
+                    <div class="container-fluid">
+                        <h2 class="mb-4">Você ainda não criou um perfil.</h2>
+                        <a href="{% url 'accounts:add_user_profile' %}" class="btn btn-primary">Criar Perfil</a>
+                    </div>
                 {% endif %}
             </div>
         </div>
