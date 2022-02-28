@@ -14,8 +14,8 @@ Implementações
 * Login/Logout;
 * Criação de perfil para cada usuário;
 * Definição de permissões para usuários;
-* Interface simples e em português;
-
+* Autenticação no Django com Python Social Auth;
+* Autenticação utizando o Google Recaptcha;  
 
 ## Rodando o projeto localmente
 
