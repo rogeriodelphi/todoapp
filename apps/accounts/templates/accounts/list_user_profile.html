@@ -16,7 +16,8 @@
                 <div class="col-lg-2">
                     <div class="card mb-3">
                         <div class="card-body text-center shadow"><img class="rounded-circle mb-3 mt-4" src="{{ profile.photo.url }}" width="100" height="100">
-                            <div class="mb-3"><button class="btn btn-primary btn-sm" type="button">Alterar Foto</button></div>
+{#                            <div class="mb-3"><button class="btn btn-primary btn-sm" type="button">Alterar Foto</button></div>#}
+                             <a href="{% url 'accounts:change_user_profile' user.username %}" class="btn btn-primary">Alterar Perfil</a>
                         </div>
                     </div>
                 </div>
@@ -106,19 +107,19 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-4">
+                                            <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label for="bairro"><strong>Bairro</strong></label>
                                                     <input readonly class="form-control" type="text" placeholder="{{ profile.bairro }}" name="bairro">
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label for="cidade"><strong>Cidade</strong></label>
                                                     <input readonly class="form-control" type="text" value="{{ profile.cidade }}" name="cidade">
                                                 </div>
                                             </div>
-                                            <div class="col-md-2">
+                                            <div class="col-md-1">
                                                 <div class="form-group">
                                                     <label for="estado"><strong>Estado</strong></label>
                                                     <input readonly class="form-control" type="text" value="{{ profile.estado }}" name="estado">
@@ -130,11 +131,16 @@
                                                     <input readonly class="form-control" type="text" placeholder="{{ profile.cep }}" name="cep">
                                                 </div>
                                             </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="cel_phone"><strong>Celular</strong></label>
+                                                    <input readonly class="form-control" type="text" placeholder="{{ profile.cel_phone }}" name="cep">
+                                                </div>
+                                            </div>
                                         </div>
                                     </form>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -146,26 +152,4 @@
                 {% endif %}
             </div>
         </div>
-{#    <div class="container-fluid">#}
-{#        <div class="row">#}
-{#            <div class="col-md-12">#}
-{#            <h1>Meu Perfil</h1>#}
-{##}
-{#            {% if profile %}#}
-{#                <div class="media">#}
-{#                    <img src="{{ profile.photo.url }}" class="align-self-start mr-3 rounded-circle" alt="..." width="100" height="100">#}
-{#                    <div class="media-body">#}
-{#                        <h5 class="mt-0">{{ profile.user.get_full_name }}</h5>#}
-{#                        <p>Celular: {{ profile.cel_phone }}</p>#}
-{#                        <p>E-mail: {{ profile.user.email }}</p>#}
-{#                    </div>#}
-{#                </div>#}
-{#                <a href="{% url 'accounts:change_user_profile' user.username %}" class="btn btn-primary">Alterar Perfil</a>#}
-{#            {% else %}#}
-{#                <h2>Você ainda não criou um perfil.</h2>#}
-{#                <a href="{% url 'accounts:add_user_profile' %}" class="btn btn-primary">Criar Perfil</a>#}
-{#            {% endif %}#}
-{#            </div>#}
-{#        </div>#}
-
 {% endblock content %}

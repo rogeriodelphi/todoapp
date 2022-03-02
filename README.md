@@ -1,5 +1,5 @@
-[![Python Version](https://img.shields.io/badge/python-3.8.3-brightgreen.svg)](https://python.org)
-[![Django Version](https://img.shields.io/badge/django-2.2.13-brightgreen.svg)](https://djangoproject.com)
+[![Python Version](https://img.shields.io/badge/python-3.7.5-brightgreen.svg)](https://python.org)
+[![Django Version](https://img.shields.io/badge/django-3.2.12-brightgreen.svg)](https://djangoproject.com)
 [![Updates](https://pyup.io/repos/github/rogeriodelphi/todoapp/shield.svg)](https://pyup.io/repos/github/rogeriodelphi/todoapp/)
 [![Python 3](https://pyup.io/repos/github/rogeriodelphi/todoapp/python-3-shield.svg)](https://pyup.io/repos/github/rogeriodelphi/todoapp/)
 [![codecov](https://codecov.io/gh/rogeriodelphi/todoapp/branch/master/graph/badge.svg)](https://codecov.io/gh/rogeriodelphi/todoapp)
