@@ -16,7 +16,6 @@
                 <div class="col-lg-2">
                     <div class="card mb-3">
                         <div class="card-body text-center shadow"><img class="rounded-circle mb-3 mt-4" src="{{ profile.photo.url }}" width="100" height="100">
-{#                            <div class="mb-3"><button class="btn btn-primary btn-sm" type="button">Alterar Foto</button></div>#}
                              <a href="{% url 'accounts:change_user_profile' user.username %}" class="btn btn-primary">Alterar Perfil</a>
                         </div>
                     </div>
@@ -89,52 +88,53 @@
                                         <div class="p-3 mb-2 bg-light text-dark">
                                             <div class="form-row">
                                                 <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="endereco"><strong>Endereço</strong></label>
-                                                    <input readonly class="form-control" type="text" placeholder="{{ profile.endereco }}" name="endereco">
+                                                    <div class="form-group">
+                                                        <label for="endereco"><strong>Endereço</strong></label>
+                                                        <input readonly class="form-control" type="text" placeholder="{{ profile.endereco }}" name="endereco">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <div class="form-group">
-                                                    <label for="numero"><strong>Número</strong></label>
-                                                    <input readonly class="form-control" type="text" placeholder="{{ profile.numero }}" name="numero">
+                                                <div class="col-md-2">
+                                                    <div class="form-group">
+                                                        <label for="numero"><strong>Número</strong></label>
+                                                        <input readonly class="form-control" type="text" placeholder="{{ profile.numero }}" name="numero">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label for="complemento"><strong>Complemento</strong></label>
-                                                    <input readonly class="form-control" type="text" placeholder="{{ profile.complemento }}" name="complemento">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="complemento"><strong>Complemento</strong></label>
+                                                        <input readonly class="form-control" type="text" placeholder="{{ profile.complemento }}" name="complemento">
+                                                    </div>
                                                 </div>
-                                            </div>
 
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <label for="bairro"><strong>Bairro</strong></label>
-                                                    <input readonly class="form-control" type="text" placeholder="{{ profile.bairro }}" name="bairro">
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label for="bairro"><strong>Bairro</strong></label>
+                                                        <input readonly class="form-control" type="text" placeholder="{{ profile.bairro }}" name="bairro">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <label for="cidade"><strong>Cidade</strong></label>
-                                                    <input readonly class="form-control" type="text" value="{{ profile.cidade }}" name="cidade">
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label for="cidade"><strong>Cidade</strong></label>
+                                                        <input readonly class="form-control" type="text" value="{{ profile.cidade }}" name="cidade">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-1">
-                                                <div class="form-group">
-                                                    <label for="estado"><strong>Estado</strong></label>
-                                                    <input readonly class="form-control" type="text" value="{{ profile.estado }}" name="estado">
+                                                <div class="col-md-1">
+                                                    <div class="form-group">
+                                                        <label for="estado"><strong>Estado</strong></label>
+                                                        <input readonly class="form-control" type="text" value="{{ profile.estado }}" name="estado">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <div class="form-group">
-                                                    <label for="cep"><strong>CEP</strong></label>
-                                                    <input readonly class="form-control" type="text" placeholder="{{ profile.cep }}" name="cep">
+                                                <div class="col-md-2">
+                                                    <div class="form-group">
+                                                        <label for="cep"><strong>CEP</strong></label>
+                                                        <input readonly class="form-control" type="text" placeholder="{{ profile.cep }}" name="cep">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <label for="cel_phone"><strong>Celular</strong></label>
-                                                    <input readonly class="form-control" type="text" placeholder="{{ profile.cel_phone }}" name="cep">
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label for="cel_phone"><strong>Celular</strong></label>
+                                                        <input readonly class="form-control" type="text" placeholder="{{ profile.cel_phone }}" name="cep">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
