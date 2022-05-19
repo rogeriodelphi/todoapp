@@ -1,0 +1,839 @@
+[
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "tasks",
+    "model": "category"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "tasks",
+    "model": "task"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "accounts",
+    "model": "userprofile"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "tasks",
+    "model": "eventmember"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "tasks",
+    "model": "taskmember"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "22yj95r2g1mb8l9j606av14ab1llyvd9",
+  "fields": {
+    "session_data": "NmI5MjlhMThiYmJmNTUxMTBhMjkzYmY0ZTJkMzMwYjZjZjczNmJiYzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJiODE2ZmUzY2I0MjEwOTQ5MDNmOWM0YWM4MTFjMjRmOWJjMTMzNDMzIn0=",
+    "expire_date": "2021-04-12T00:45:25.197Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "8p5mkogc6zgzcsd27ssofpipg7q417xu",
+  "fields": {
+    "session_data": "NmI5MjlhMThiYmJmNTUxMTBhMjkzYmY0ZTJkMzMwYjZjZjczNmJiYzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJiODE2ZmUzY2I0MjEwOTQ5MDNmOWM0YWM4MTFjMjRmOWJjMTMzNDMzIn0=",
+    "expire_date": "2021-04-13T03:42:31.022Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "d5p1ar1lkj8m5egkg6ly4z3140h7znen",
+  "fields": {
+    "session_data": "NmI5MjlhMThiYmJmNTUxMTBhMjkzYmY0ZTJkMzMwYjZjZjczNmJiYzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJiODE2ZmUzY2I0MjEwOTQ5MDNmOWM0YWM4MTFjMjRmOWJjMTMzNDMzIn0=",
+    "expire_date": "2021-04-11T18:30:26.571Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "k3lts6y9qhzyz5skfg0sgrelyal01x6k",
+  "fields": {
+    "session_data": "NmI5MjlhMThiYmJmNTUxMTBhMjkzYmY0ZTJkMzMwYjZjZjczNmJiYzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJiODE2ZmUzY2I0MjEwOTQ5MDNmOWM0YWM4MTFjMjRmOWJjMTMzNDMzIn0=",
+    "expire_date": "2021-04-11T22:46:11.156Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "qyfpq1v5e8qw0dv545lkg4w73wf4zfbz",
+  "fields": {
+    "session_data": "NmI5MjlhMThiYmJmNTUxMTBhMjkzYmY0ZTJkMzMwYjZjZjczNmJiYzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJiODE2ZmUzY2I0MjEwOTQ5MDNmOWM0YWM4MTFjMjRmOWJjMTMzNDMzIn0=",
+    "expire_date": "2021-04-11T23:23:31.094Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "uj2d6dyna7yrmz0u7yyl1oyiwe2ksthn",
+  "fields": {
+    "session_data": "NmI5MjlhMThiYmJmNTUxMTBhMjkzYmY0ZTJkMzMwYjZjZjczNmJiYzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJiODE2ZmUzY2I0MjEwOTQ5MDNmOWM0YWM4MTFjMjRmOWJjMTMzNDMzIn0=",
+    "expire_date": "2021-04-12T21:20:01.317Z"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add Categoria",
+    "content_type": 7,
+    "codename": "add_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change Categoria",
+    "content_type": 7,
+    "codename": "change_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete Categoria",
+    "content_type": 7,
+    "codename": "delete_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view Categoria",
+    "content_type": 7,
+    "codename": "view_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add Tarefa",
+    "content_type": 8,
+    "codename": "add_task"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change Tarefa",
+    "content_type": 8,
+    "codename": "change_task"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete Tarefa",
+    "content_type": 8,
+    "codename": "delete_task"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view Tarefa",
+    "content_type": 8,
+    "codename": "view_task"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add Perfil do Usu\u00e1rio",
+    "content_type": 9,
+    "codename": "add_userprofile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change Perfil do Usu\u00e1rio",
+    "content_type": 9,
+    "codename": "change_userprofile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete Perfil do Usu\u00e1rio",
+    "content_type": 9,
+    "codename": "delete_userprofile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view Perfil do Usu\u00e1rio",
+    "content_type": 9,
+    "codename": "view_userprofile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add event member",
+    "content_type": 10,
+    "codename": "add_eventmember"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change event member",
+    "content_type": 10,
+    "codename": "change_eventmember"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete event member",
+    "content_type": 10,
+    "codename": "delete_eventmember"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view event member",
+    "content_type": 10,
+    "codename": "view_eventmember"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add task member",
+    "content_type": 11,
+    "codename": "add_taskmember"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change task member",
+    "content_type": 11,
+    "codename": "change_taskmember"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete task member",
+    "content_type": 11,
+    "codename": "delete_taskmember"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view task member",
+    "content_type": 11,
+    "codename": "view_taskmember"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$48gFEpiokeDb$G07dZlpVsLqsmlYhdLufVYY+gZdjErUjmqRONJfLyko=",
+    "last_login": "2021-03-30T03:42:31.013Z",
+    "is_superuser": true,
+    "username": "rogerio.martins",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2021-03-28T17:57:08.118Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$Zs4uN9bQACJu$W+tqt8mBFrdmR2BpDuqV828IjLt2ZmQIh8jbI52J9bM=",
+    "last_login": "2021-03-28T22:41:57.518Z",
+    "is_superuser": false,
+    "username": "davi.martins",
+    "first_name": "Davi",
+    "last_name": "Martins",
+    "email": "davi.martins@mail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-03-28T22:38:19Z",
+    "groups": [],
+    "user_permissions": [
+      25,
+      29,
+      30
+    ]
+  }
+},
+{
+  "model": "tasks.category",
+  "pk": 1,
+  "fields": {
+    "title": "Python e Django",
+    "description": "",
+    "user": 1
+  }
+},
+{
+  "model": "tasks.category",
+  "pk": 2,
+  "fields": {
+    "title": "JavaScript",
+    "description": "",
+    "user": 1
+  }
+},
+{
+  "model": "tasks.category",
+  "pk": 3,
+  "fields": {
+    "title": "Portugu\u00eas",
+    "description": "Revisar o assunto de Ortografia e suas coloca\u00e7\u00f5es",
+    "user": 2
+  }
+},
+{
+  "model": "tasks.category",
+  "pk": 4,
+  "fields": {
+    "title": "Gr\u00e1ficos",
+    "description": "",
+    "user": 1
+  }
+},
+{
+  "model": "tasks.category",
+  "pk": 5,
+  "fields": {
+    "title": "Relat\u00f3rios",
+    "description": "",
+    "user": 1
+  }
+},
+{
+  "model": "tasks.category",
+  "pk": 6,
+  "fields": {
+    "title": "Desenvolvimento",
+    "description": "",
+    "user": 1
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 4,
+  "fields": {
+    "user": 2,
+    "title": "Estudar e revisar Ortografia",
+    "description": "Ler o livro da p\u00e1gina 5 a 12 e depois estudar o caderno de resumo!",
+    "start_time": "2021-03-28",
+    "end_time": "2021-03-28",
+    "priority": "B",
+    "status": "AF",
+    "created_date": "2021-03-28T22:40:45.974Z",
+    "category": [
+      3
+    ]
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 6,
+  "fields": {
+    "user": 1,
+    "title": "Gr\u00e1ficos no Django",
+    "description": "Gr\u00e1ficos no Django usando Chart.js, ler o artigo: https://medium.com/code-rocket-blog/trabalhando-com-gr%C3%A1ficos-no-django-usando-chart-js-495aa6abbe0f",
+    "start_time": "2021-03-29",
+    "end_time": "2021-03-29",
+    "priority": "A",
+    "status": "AF",
+    "created_date": "2021-03-28T23:51:31.446Z",
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 7,
+  "fields": {
+    "user": 1,
+    "title": "Gerando PDF a partir de HTML no Admin do Django",
+    "description": "Criando o projeto\r\nAntes de tudo precisamos criar o projeto, para isso crie um ambiente virtual com o pipenv (Caso n\u00e3o esteja familiarizado com o pipenv leia esse post onde explico tudinho) e instale o django com:\r\n$ pipenv install django==2.0\r\nCrie o projeto executando o comando abaixo:\r\n$ django-admin.py startproject project .\r\nCrie a aplica\u00e7\u00e3o que armazenar\u00e1 toda a nossa l\u00f3gica com:\r\n$ python manage.py startapp reports",
+    "start_time": "2021-03-28",
+    "end_time": "2021-03-28",
+    "priority": "B",
+    "status": "FA",
+    "created_date": "2021-03-29T00:03:35.741Z",
+    "category": [
+      5
+    ]
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 8,
+  "fields": {
+    "user": 1,
+    "title": "Aula D\u00e9ployez une application Django -  2. Configurez un espace serveur",
+    "description": "D\u00e9ployez une application Django -  2. Configurez un espace serveur - https://openclassrooms.com/en/courses/4425101-deployez-une-application-django/4688335-configurez-un-espace-serveur",
+    "start_time": "2021-03-22",
+    "end_time": "2021-03-22",
+    "priority": "A",
+    "status": "CO",
+    "created_date": "2021-03-29T00:17:44.009Z",
+    "category": [
+      1,
+      6
+    ]
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 9,
+  "fields": {
+    "user": 1,
+    "title": "Aula D\u00e9ployez une application Django -  3. T\u00e9l\u00e9chargez l'application sur le serveur distant",
+    "description": "D\u00e9ployez une application Django -  3. T\u00e9l\u00e9chargez l'application sur le serveur distant - https://openclassrooms.com/en/courses/4425101-deployez-une-application-django/4688407-telechargez-lapplication-sur-le-serveur-distant",
+    "start_time": "2021-03-23",
+    "end_time": "2021-03-23",
+    "priority": "A",
+    "status": "CO",
+    "created_date": "2021-03-29T00:18:20.806Z",
+    "category": [
+      1,
+      6
+    ]
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 10,
+  "fields": {
+    "user": 1,
+    "title": "Aula",
+    "description": "D\u00e9ployez une application Django -  4. Utilisez le serveur HTTP Nginx - https://openclassrooms.com/en/courses/4425101-deployez-une-application-django/4688553-utilisez-le-serveur-http-nginx",
+    "start_time": "2021-03-23",
+    "end_time": "2021-03-23",
+    "priority": "A",
+    "status": "CO",
+    "created_date": "2021-03-29T00:18:48.455Z",
+    "category": [
+      1,
+      6
+    ]
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 11,
+  "fields": {
+    "user": 1,
+    "title": "Aula D\u00e9ployez une application Django -  4. Utilisez le serveur HTTP Nginx",
+    "description": "D\u00e9ployez une application Django -  4. Utilisez le serveur HTTP Nginx - https://openclassrooms.com/en/courses/4425101-deployez-une-application-django/4688553-utilisez-le-serveur-http-nginx",
+    "start_time": "2021-03-29",
+    "end_time": "2021-03-29",
+    "priority": "A",
+    "status": "AF",
+    "created_date": "2021-03-29T00:19:19.276Z",
+    "category": [
+      1,
+      6
+    ]
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 12,
+  "fields": {
+    "user": 1,
+    "title": "Aula D\u00e9ployez une application Django -  5. Configurez Gunicorn et Supervisor",
+    "description": "D\u00e9ployez une application Django -  5. Configurez Gunicorn et Supervisor - https://openclassrooms.com/en/courses/4425101-deployez-une-application-django/4688628-configurez-gunicorn-et-supervisor",
+    "start_time": "2021-03-29",
+    "end_time": "2021-03-29",
+    "priority": "A",
+    "status": "AF",
+    "created_date": "2021-03-29T00:19:51.598Z",
+    "category": [
+      1,
+      6
+    ]
+  }
+},
+{
+  "model": "tasks.taskmember",
+  "pk": 1,
+  "fields": {
+    "task": 8,
+    "user": 1
+  }
+},
+{
+  "model": "accounts.userprofile",
+  "pk": 1,
+  "fields": {
+    "photo": "photos/imageedit_24_4441533075_O3wugPY.jpg",
+    "cel_phone": "(75) 98805-7797",
+    "user": 1
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2021-03-28T22:37:12.882Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "davi.martins",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2021-03-28T22:38:20.478Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "davi.martins",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\", \"email\", \"user_permissions\", \"last_login\", \"date_joined\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2021-03-28T23:12:21.401Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Estudar e revisar Ortografia",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2021-03-30T04:12:51.614Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "rogerio.martins",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+}
+]

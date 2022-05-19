@@ -7,7 +7,7 @@
     Resultado da Busca - {{ block.super }}
 {% endblock title %}
 
-{% block body %}
+{% block content %}
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -26,9 +26,9 @@
                     {% for task in tasks %}
                         <tr>
                             <th>{{ task.id }}</th>
-                            <th>{{ task.name }}</th>
+                            <th>{{ task.title }}</th>
                             <td>{{ task.description }}</td>
-                            <td>{{ task.end_date|date:'d/m/yy' }}</td>
+                            <td>{{ task.end_time|date:'d/m/yy' }}</td>
                             <td><a href="{% url 'tasks:edit_task' task.id %}" class="btn btn-primary btn-sm">Editar</a></td>
                         </tr>
                     {% endfor %}
@@ -37,4 +37,4 @@
             </div>
         </div>
     </div>
-{% endblock body %}
+{% endblock content %}

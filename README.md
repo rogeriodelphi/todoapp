@@ -1,18 +1,21 @@
 [![Python Version](https://img.shields.io/badge/python-3.7.5-brightgreen.svg)](https://python.org)
-[![Django Version](https://img.shields.io/badge/django-2.2.10-brightgreen.svg)](https://djangoproject.com)
+[![Django Version](https://img.shields.io/badge/django-3.2.12-brightgreen.svg)](https://djangoproject.com)
+[![Updates](https://pyup.io/repos/github/rogeriodelphi/todoapp/shield.svg)](https://pyup.io/repos/github/rogeriodelphi/todoapp/)
+[![Python 3](https://pyup.io/repos/github/rogeriodelphi/todoapp/python-3-shield.svg)](https://pyup.io/repos/github/rogeriodelphi/todoapp/)
+[![codecov](https://codecov.io/gh/rogeriodelphi/todoapp/branch/master/graph/badge.svg)](https://codecov.io/gh/rogeriodelphi/todoapp)
 
 # ToDoAPP
 ```bash
 *Sistema de Gestão de Tarefas*  
-Projeto proprietário desenvolvido em _Python_ 3 no _Windows_, testado no GNU/_Linux_ e _Windows_.  
+Projeto desenvolvido em _Python_ no _Windows_, testado no GNU/_Linux_ e _Windows_.  
 ```
 Implementações
 * Cadastro de categorias e tarefas, ...
 * Login/Logout;
 * Criação de perfil para cada usuário;
 * Definição de permissões para usuários;
-* Interface simples e em português;
-
+* Autenticação no Django com Python Social Auth;
+* Autenticação utizando o Google Recaptcha;  
 
 ## Rodando o projeto localmente
 

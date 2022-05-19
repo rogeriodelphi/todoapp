@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 
-{% load staticfiles %}
+{% load static %}
+
+{% load crispy_forms_tags %}
 
 {% load widget_tweaks %}
 
@@ -10,7 +12,7 @@
 {% endblock title %}
 
 
-{% block body  %}
+{% block content %}
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -18,17 +20,102 @@
                 {% include 'partials/messages.html' %}
                 <form method="POST" action="." enctype="multipart/form-data">
                 {% csrf_token %}
-                    <div class="form-group">
-                        <label for="{{ form.photo.id_for_label }}">Foto do Perfil</label>
-                        {{ form.photo | add_class:"form-control-file" }}
+                    <div class="container">
+                        <div class="p-3 mb-12 bg-white text-dark">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="{{ form.photo.id_for_label }}">Foto do Perfil</label>
+                                        {{ form.photo | add_class:"form-control-file" }}
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="{{ form.cel_phone.id_for_label }}">Celular</label>
-                        {{ form.cel_phone | add_class:"form-control" }}
+
+                    <div class="container">
+                        <div class="p-3 mb-12 bg-white text-dark">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="{{ form.cel_phone.id_for_label }}">Celular</label>
+                                        {{ form.cel_phone | add_class:"form-control" }}
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="{{ form.data_nascimento.id_for_label }}">Data de Nascimento</label>
+                                        {{ form.data_nascimento | add_class:"form-control" }}
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="{{ form.sexo.id_for_label }}">Sexo</label>
+                                        {{ form.sexo | add_class:"form-control" }}
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="{{ form.cpf.id_for_label }}">CPF</label>
+                                        {{ form.cpf | add_class:"form-control" }}
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="{{ form.endereco.id_for_label }}">Endereço</label>
+                                        {{ form.endereco | add_class:"form-control" }}
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label for="{{ form.numero.id_for_label }}">Número</label>
+                                        {{ form.numero | add_class:"form-control" }}
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="{{ form.complemento.id_for_label }}">Complemento</label>
+                                        {{ form.complemento | add_class:"form-control" }}
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="{{ form.bairro.id_for_label }}">Bairro</label>
+                                        {{ form.bairro | add_class:"form-control" }}
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="{{ form.cidade.id_for_label }}">Cidade</label>
+                                        {{ form.cidade | add_class:"form-control" }}
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="{{ form.estado.id_for_label }}">Estado</label>
+                                        {{ form.estado | add_class:"form-control" }}
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label for="{{ form.cep.id_for_label }}">CEP</label>
+                                        {{ form.cep | add_class:"form-control" }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Salvar</button>
+
+                    <div class="container">
+                        <div class="p-3 mb-12 bg-white text-dark">
+                            <div class="col-md-12" style="text-align: left">
+                                <button type="submit" class="btn btn-success"><i class="fa fa-plus"></i> Salvar</button>
+                                &nbsp;<button type="button" class="btn btn-danger" onClick="history.go(-1)"><i class="fa fa-angle-double-left"></i> Voltar</button>
+                            </div>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
     </div>
-{% endblock body %}
+{% endblock content %}

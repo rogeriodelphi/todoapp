@@ -1,9 +1,13 @@
-from django.shortcuts import render, redirect
-from django.contrib.auth.models import User
+import json
+
+import requests
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout, update_session_auth_hash
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import PasswordChangeForm
+from django.contrib.auth.models import User
+from django.http import HttpResponseRedirect
+from django.shortcuts import render, redirect
 
 from .forms import UserForm, UserProfileForm, UserFormChangeInformation
 from .models import UserProfile
@@ -15,12 +19,13 @@ def add_user(request):
     if request.method == 'POST':
         form = UserForm(request.POST)
         if form.is_valid():
-            #Para que possa passar a senha e fazer um hash dela
+            # Para que possa passar a senha e fazer um hash dela
             f = form.save(commit=False)
             f.set_password(f.password)
             f.save()
             messages.success(request, "Usuário salvo com sucesso!")
-    #se a requisição for do tipo GET, instancia o formulário 'form'
+            # return redirect('accounts:user_login')
+    # se a requisição for do tipo GET, instancia o formulário 'form'
     form = UserForm()
     context['form'] = form
     return render(request, template_name, context)
@@ -29,14 +34,27 @@ def add_user(request):
 def user_login(request):
     template_name = 'accounts/user_login.html'
     if request.method == 'POST':
-        username = request.POST.get('username')
-        password = request.POST.get('password')
-        user = authenticate(username=username, password=password)
-        if user is not None:
-            login(request, user)
-            return redirect(request.GET.get('next', '/'))
+        captcha_token = request.POST.get("g-recaptcha-response")
+        cap_url = "https://www.google.com/recaptcha/api/siteverify"
+        cap_secret = "6LflD4ceAAAAACq6YQst3lTxAddXA3uutfui1tWY"
+        cap_data = {"secret": cap_secret, "response": captcha_token}
+        cap_server_response = requests.post(url=cap_url, data=cap_data)
+        cap_json = json.loads(cap_server_response.text)
+
+        if cap_json['success'] == False:
+            messages.error(request, "Captcha inválido, tente novamente!")
+            return HttpResponseRedirect("/")
         else:
-            messages.error(request, "Usuário ou senha inválidos")
+            # print("cap_server_response: " + cap_server_response.text)
+            # print("Captcha Token: " + captcha_token)
+            username = request.POST.get('username')
+            password = request.POST.get('password')
+            user = authenticate(username=username, password=password)
+            if user is not None:
+                login(request, user)
+                return redirect(request.GET.get('next', '/'))
+            else:
+                messages.error(request, "Usuário ou senha inválidos")
     return render(request, template_name, {})
 
 
@@ -44,6 +62,7 @@ def user_login(request):
 def user_logout(request):
     logout(request)
     return redirect('accounts:user_login')
+
 
 @login_required(login_url='/contas/login/')
 def user_change_password(request):
@@ -54,15 +73,12 @@ def user_change_password(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Senha alterada com sucesso!')
-            update_session_auth_hash(request,form.user)
+            update_session_auth_hash(request, form.user)
         else:
-             messages.error(request, 'Não foi possível trocar a suanha senha!')
+            messages.error(request, 'Não foi possível trocar a suanha senha!')
     form = PasswordChangeForm(user=request.user)
     context['form'] = form
     return render(request, template_name, context)
-
-
-
 
 
 @login_required(login_url='/contas/login/')

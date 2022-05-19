@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/select2.min.css' %}">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     <!-- Font awesome CSS -->
     <link rel="stylesheet" type="text/css" href="{% static 'assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
 
@@ -18,7 +18,9 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="/">ToDo App</a>
+            <a class="navbar-brand" href="/">
+                <img src="{% static 'img/logo.gif' %}" width="30" height="30" class="d-inline-block align-top"> Todo App
+             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,10 +30,11 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown07">
-                            <a class="dropdown-item" href="{% url 'tasks:add_category' %}">Adicionar Categoria</a>
-                            <a class="dropdown-item" href="{% url 'tasks:list_categories' %}">Listar categorias</a>
-                            <a class="dropdown-item" href="{% url 'tasks:add_task' %}">Adicionar Tarefas</a>
-                            <a class="dropdown-item" href="{% url 'tasks:list_tasks' %}">Listar Tarefas</a>
+                            <a class="dropdown-item" href="{% url 'tasks:calendar' %}"><i class="fa fa-calendar"></i> Ver Calendário</a>
+                            <a class="dropdown-item" href="{% url 'tasks:add_category' %}"><i class="fa fa-plus-square"></i> Adicionar Categoria</a>
+                            <a class="dropdown-item" href="{% url 'tasks:list_categories' %}"><i class="fa fa-list-ol"></i> Listar categorias</a>
+                            <a class="dropdown-item" href="{% url 'tasks:add_task' %}"><i class="fa fa-plus-square"></i> Adicionar Tarefas</a>
+                            <a class="dropdown-item" href="{% url 'tasks:list_tasks' %}"><i class="fa fa-list-ol"></i> Listar Tarefas</a>
                         </div>
                     </li>
                 </ul>
@@ -52,11 +55,11 @@
                          <li class="nav-item dropdown">
                               <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ user.get_full_name|default:user.username }}</a>
                               <div class="dropdown-menu" aria-labelledby="dropdown07">
-                                  <a class="dropdown-item" href="{% url 'accounts:list_user_profile' %}">Perfil</a>
-                                  <a class="dropdown-item" href="{% url 'accounts:user_change_password' %}">Trocar senha</a>
-                                  <a class="dropdown-item" href="{% url 'accounts:change_user_information' user.username %}">Outras informações</a>
+                                  <a class="dropdown-item" href="{% url 'accounts:list_user_profile' %}"><i class="fa fa-user"></i> Perfil</a>
+                                  <a class="dropdown-item" href="{% url 'accounts:user_change_password' %}"><i class="fa fa-key"></i> Trocar senha</a>
+                                  <a class="dropdown-item" href="{% url 'accounts:change_user_information' user.username %}"><i class="fa fa-info"></i> Outras informações</a>
                                   <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="{% url 'accounts:user_logout' %}">Sair</a>
+                                  <a class="dropdown-item" href="{% url 'accounts:user_logout' %}"><i class="fa fa-window-close"></i> Sair</a>
                               </div>
                          </li>
                     </ul>
@@ -65,9 +68,9 @@
             </div>
         </nav>
 
-    {% block body %}
+    {% block content %}
 
-    {% endblock body %}
+    {% endblock content %}
 
     <script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
@@ -75,6 +78,14 @@
     <script src="{% static 'js/jquery.mask.min.js' %}"></script>
     <script src="{% static 'js/mask.js' %}"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+    <script type="text/javascript">
+        // Hide message
+        $(".alert").fadeTo(2000, 500).slideUp(500, function(){
+            $(".alert").slideUp(500);
+        });
+    </script>
 
     <script>
         $(document).on('click', '.confirm-delete', function() {
@@ -85,7 +96,16 @@
             window.location = $('#'.concat(caller)).attr('href');
         });
         $(function() {
-            $('#id_end_date').datepicker(
+            $('#id_start_time').datepicker(
+                {
+                    changeMonth: true,
+                    changeYear: true,
+                    dateFormat: "dd/mm/yy",
+                    dayNamesMin: ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"],
+                    monthNames: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
+                }
+            );
+            $('#id_end_time').datepicker(
                 {
                     changeMonth: true,
                     changeYear: true,
@@ -102,6 +122,13 @@
                 }
             );
             $('#id_busca_datafinal').datepicker(
+                {
+                    dateFormat: "yy-mm-dd",
+                    dayNamesMin: ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"],
+                    monthNames: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
+                }
+            );
+            $('#id_data_nascimento').datepicker(
                 {
                     dateFormat: "yy-mm-dd",
                     dayNamesMin: ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"],
