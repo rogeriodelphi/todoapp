@@ -6,7 +6,7 @@ from django.template.loader import render_to_string
 from django.utils.safestring import mark_safe
 from django_select2.forms import ModelSelect2Widget, ModelSelect2MultipleWidget
 
-from newadmin.utils import ChainedMultipleSelectWidget
+from apps.core.utils import ChainedMultipleSelectWidget
 from calendar import HTMLCalendar
 from collections import OrderedDict
 from datetime import datetime
