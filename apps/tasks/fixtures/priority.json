@@ -1,0 +1,23 @@
+[
+  {
+    "model": "task.priority",
+    "pk": 1,
+    "fields": {
+      "descricao": "Baixa)"
+    }
+  },
+  {
+    "model": "task.priority",
+    "pk": 2,
+    "fields": {
+      "descricao": "Média"
+    }
+  },
+  {
+    "model": "task.priority",
+    "pk": 3,
+    "fields": {
+      "descricao": "Alta"
+    }
+  }
+]

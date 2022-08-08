@@ -34,9 +34,9 @@ mark_all_tasks_running.short_description = "Marcar como 'Concluída' todas as ta
 @admin.register(Task)
 class TaskAdmin(admin.ModelAdmin):
     list_display = (
-        'id', 'title', 'user', 'start_time', 'end_time', 'priority', 'list_categories', 'status', 'created_date')
+        'id', 'title', 'user', 'start_time', 'end_time', 'list_categories', 'status', 'created_date')
     search_fields = ['title', 'description']
-    list_filter = ['priority', 'user', 'category', 'status']
+    list_filter = ['user', 'category', 'status']
     actions = [mark_all_tasks_done, mark_all_tasks_pending, mark_all_tasks_running]
     filter_horizontal = ['category']
     list_editable = ['title']

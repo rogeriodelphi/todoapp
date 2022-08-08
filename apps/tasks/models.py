@@ -17,6 +17,14 @@ class Category(models.Model):
     def __str__(self):
         return self.title
 
+class Priority(models.Model):
+    description = models.CharField('Descrição', max_length=100)
+    class Meta:
+        verbose_name = "Priority"
+        verbose_name_plural = "Priorities"
+
+    def __str__(self):
+        return self.description
 
 class Task(models.Model):
     PRIORITY_CHOICES = (
@@ -35,7 +43,8 @@ class Task(models.Model):
     description = models.TextField('Descrição')
     start_time = models.DateField('Data Inicial')
     end_time = models.DateField('Data Final')
-    priority = models.CharField('Prioridade', max_length=1, choices=PRIORITY_CHOICES)
+    priority = models.ManyToManyField(Priority, verbose_name="Priority", related_name="priorities", blank=True)
+    # priority = models.CharField('Prioridade', max_length=1, choices=PRIORITY_CHOICES)
     category = models.ManyToManyField(Category)
     status = models.CharField('Status', max_length=2, choices=STATUS_CHOICES)
     created_date = models.DateTimeField(auto_now_add=True)
@@ -76,3 +85,6 @@ class TaskMember(models.Model):
 
     def __str__(self):
         return str(self.user)
+
+
+

@@ -46,12 +46,15 @@ DJANGO_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'jquery',
 ]
 
 THIRD_APPS = [
+    'localflavor',
     'social_django',
     'crispy_forms',
     'widget_tweaks',
+    'djangoformsetjs',
 ]
 
 PROJECT_APPS = [
