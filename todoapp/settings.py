@@ -52,9 +52,9 @@ DJANGO_APPS = [
 THIRD_APPS = [
     'localflavor',
     'social_django',
-    'crispy_forms',
+    # 'crispy_forms',
     'widget_tweaks',
-    'djangoformsetjs',
+    # 'djangoformsetjs',
 ]
 
 PROJECT_APPS = [
