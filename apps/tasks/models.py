@@ -47,7 +47,13 @@ class Task(models.Model):
     priority = models.CharField('Prioridade', max_length=1, choices=PRIORITY_CHOICES)
     category = models.ManyToManyField(Category)
     status = models.CharField('Status', max_length=2, choices=STATUS_CHOICES)
-    created_date = models.DateTimeField(auto_now_add=True)
+    created_date = models.DateTimeField('Criado em', auto_now_add=True)
+
+    class Meta:
+        db_table = 'Task'
+        verbose_name = 'Tarefa'
+        verbose_name_plural = 'Tarefas'
+        ordering = ['-start_time']
 
     def __str__(self):
         return self.title
@@ -60,12 +66,6 @@ class Task(models.Model):
         url = reverse('tasks:task-detail', args=(self.id,))
         print(url)
         return f'<a href="{url}"> {self.title} </a>'
-
-    class Meta:
-        db_table = 'Task'
-        verbose_name = 'Tarefa'
-        verbose_name_plural = 'Tarefas'
-        ordering = ['-start_time']
 
     def __str__(self):
         return self.title
