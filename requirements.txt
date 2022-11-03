@@ -15,7 +15,7 @@ django-jquery-js==3.1.1
 django-localflavor==3.0.1
 django-ranged-response==0.2.0
 django-recaptcha==3.0.0
-django-select2==7.2.3
+django-select2==7.11.1
 django-widget-tweaks==1.4.8
 greenlet==0.4.15
 idna==2.9
