@@ -20,7 +20,7 @@ django-recaptcha==3.0.0
 django-select2==8.0.0
 django-widget-tweaks==1.4.12
 djangorestframework==3.14.0
-idna==2.6
+idna==3.4
 localflavor==1.9
 oauthlib==3.2.2
 Pillow==9.4.0
