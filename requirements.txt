@@ -99,7 +99,7 @@ parso==0.8.3
 pbr==5.9.0
 pickleshare==0.7.5
 Pillow==8.1.0
-platformdirs==2.5.2
+platformdirs==2.6.2
 prompt-toolkit==3.0.29
 psutil==5.7.0
 psycopg2-binary==2.9.5
