@@ -142,7 +142,7 @@ stack-data==0.2.0
 static3==0.7.0
 suds==1.0.0
 testresources==2.0.1
-tinycss2==1.1.0
+tinycss2==1.2.1
 tornado==6.1
 tqdm==4.63.0
 traitlets==5.2.0
