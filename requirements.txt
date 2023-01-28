@@ -7,7 +7,7 @@ attrs==21.4.0
 autobahn==22.3.2
 Automat==20.2.0
 backcall==0.2.0
-beautifulsoup4==4.9.0
+beautifulsoup4==4.11.1
 billiard==3.6.4.0
 blessed==1.19.1
 boto3==1.14.11
