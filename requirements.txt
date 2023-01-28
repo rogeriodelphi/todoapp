@@ -62,7 +62,7 @@ django-simple-history==3.0.0
 django-storages==1.12.3
 django-widget-tweaks==1.4.2
 djangorestframework==3.11.0
-djangorestframework-datatables==0.5.2
+djangorestframework-datatables==0.7.0
 docutils==0.15.2
 elasticsearch==7.10.0
 elasticsearch-dsl==7.3.0
