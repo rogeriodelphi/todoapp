@@ -114,7 +114,7 @@ Pygments==2.12.0
 pyOpenSSL==22.0.0
 PyPDF2==1.27.8
 Pyphen==0.10.0
-pyTelegramBotAPI==4.5.1
+pyTelegramBotAPI==4.9.0
 python-dateutil==2.8.1
 python-decouple==3.4
 python-stdnum==1.17
