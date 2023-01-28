@@ -80,7 +80,7 @@ humanize==0.5.1
 hyperlink==21.0.0
 idna==2.10
 incremental==21.3.0
-ipython==8.3.0
+ipython==8.9.0
 isodate==0.6.1
 jdcal==1.4.1
 jedi==0.18.1
