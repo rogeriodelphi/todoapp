@@ -138,7 +138,7 @@ social-auth-app-django==3.1.0
 social-auth-core==3.2.0
 soupsieve==2.3.2.post1
 sqlparse==0.4.1
-stack-data==0.2.0
+stack-data==0.6.2
 static3==0.7.0
 suds==1.0.0
 testresources==2.0.1
