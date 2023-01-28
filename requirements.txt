@@ -53,7 +53,7 @@ django-localflavor==3.0.1
 django-minio-storage==0.3.7
 django-multiupload==0.5.2
 django-nine==0.2.4
-django-ninja==0.14.0
+django-ninja==0.20.0
 django-recaptcha==2.0.6
 django-redis==4.11.0
 django-s3-folder-storage==0.5
