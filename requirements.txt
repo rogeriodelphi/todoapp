@@ -120,7 +120,7 @@ python-decouple==3.4
 python-stdnum==1.17
 python3-openid==3.2.0
 pytz==2020.5
-rcssmin==1.0.6
+rcssmin==1.1.1
 redis==3.5.2
 requests==2.27.1
 requests-file==1.5.1
