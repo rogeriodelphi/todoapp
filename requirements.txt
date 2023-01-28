@@ -67,7 +67,7 @@ docutils==0.15.2
 elasticsearch==7.10.0
 elasticsearch-dsl==7.3.0
 et-xmlfile==1.1.0
-executing==0.8.3
+executing==1.2.0
 flake8==3.9.0
 flower==0.9.4
 google-auth==1.14.3
