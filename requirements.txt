@@ -3,7 +3,7 @@ amqp==2.6.1
 asgiref==3.5.0
 asttokens==2.0.5
 async-timeout==4.0.2
-attrs==21.4.0
+attrs==22.2.0
 autobahn==22.3.2
 Automat==20.2.0
 backcall==0.2.0
