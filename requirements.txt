@@ -31,7 +31,7 @@ cwcwidth==0.1.8
 daphne==2.5.0
 decorator==5.1.1
 defusedxml==0.6.0
-dj-database-url==0.5.0
+dj-database-url==1.2.0
 dj-static==0.0.6
 Django==4.0
 django-appconf==1.0.4
