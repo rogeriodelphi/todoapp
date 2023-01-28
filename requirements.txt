@@ -93,7 +93,7 @@ mccabe==0.6.1
 minio==5.0.10
 msgpack==0.6.2
 numpy==1.22.3
-openpyxl==3.0.3
+openpyxl==3.0.10
 pandas==1.1.5
 parso==0.8.3
 pbr==5.9.0
