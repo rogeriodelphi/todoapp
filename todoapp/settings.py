@@ -69,6 +69,7 @@ INSTALLED_APPS = DJANGO_APPS + THIRD_APPS + PROJECT_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -184,14 +185,17 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 #Em desenvolvimento ficam aqui - produção ficam no STATIC_ROOT
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'staticfiles'),
+    os.path.join(BASE_DIR, 'static'),
 )
 
 from django.contrib.messages import constants as messages
@@ -210,3 +214,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
 # GOOGLE_RECAPTCHA_SECRET_KEY = '6LflD4ceAAAAADvaAoot3cAFjxnU_T_bq015cBpN'
 GOOGLE_RECAPTCHA_SECRET_KEY = config('GOOGLE_RECAPTCHA_SECRET_KEY')
+
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
