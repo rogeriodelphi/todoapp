@@ -74,7 +74,7 @@ google-auth==1.14.3
 google-auth-oauthlib==0.5.1
 gspread==3.6.0
 gunicorn==20.0.4
-hiredis==2.0.0
+hiredis==2.1.1
 html5lib==1.1
 humanize==0.5.1
 hyperlink==21.0.0
