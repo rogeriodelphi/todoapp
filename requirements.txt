@@ -84,7 +84,7 @@ ipython==8.3.0
 isodate==0.6.1
 jdcal==1.4.1
 jedi==0.18.1
-jmespath==0.10.0
+jmespath==1.0.1
 jupyter-core==4.10.0
 kombu==4.6.11
 lxml==4.6.3
