@@ -65,7 +65,7 @@ djangorestframework==3.11.0
 djangorestframework-datatables==0.5.2
 docutils==0.15.2
 elasticsearch==7.10.0
-elasticsearch-dsl==7.3.0
+elasticsearch-dsl==7.4.0
 et-xmlfile==1.1.0
 executing==0.8.3
 flake8==3.9.0
