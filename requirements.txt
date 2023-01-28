@@ -140,7 +140,7 @@ soupsieve==2.3.2.post1
 sqlparse==0.4.1
 stack-data==0.2.0
 static3==0.7.0
-suds==1.0.0
+suds==1.1.2
 testresources==2.0.1
 tinycss2==1.1.0
 tornado==6.1
